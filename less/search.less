@@ -1,0 +1,135 @@
+@import "colors.less";
+@import "size.less";
+@import "layout.less";
+@import "css3.less";
+@import "flex.less";
+@import "iconfont.less";
+@import "icon.less";
+@import "button.less";
+
+.search-bar{
+    background-color: @bar_bg;
+    border-top:1px solid @border_line;
+    border-bottom:1px solid @border_line;
+    padding: @num4;
+    &.search-bar-focusing{
+      .search-bar-cancelbtn{
+            display: block;
+        }
+        .search-bar-label{
+            display: none;
+        }   
+    }
+   
+}
+.search-bar-form{
+    position: relative;
+    .pre(flex,auto);
+    .pre(box-flex,1);
+    background-color: @bar_bg;
+    
+    &:after{
+        content: " ";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width:200%;
+        height:200%;
+        .pre(transform,scale(0.5));
+        .pre(transform-origin,0 0);
+        .round(10px);
+        box-sizing: border-box;
+        background-color: @white;
+    }  
+}
+
+.search-bar-box{
+    position: relative;
+    padding-left:@num9;
+    padding-right:@num9;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1;
+    .icon-sousuo{
+        position: absolute;
+        top: 0;
+        left: @num3;
+        line-height:@search_h ;
+    }
+    .search-bar-input{
+    width: 100%;
+    padding: 4px 0;
+    height: @search_h;
+    font-size: @text_L_size;
+    line-height: unit(@search_h/@text_L_size);
+     border:none;
+     background: transparent;  
+      
+}
+
+.search-bar-clear{
+    display: none;
+   position: absolute;
+   right: 0;
+   top:0;
+   line-height:@search_h;
+   padding: 0 @num3;
+   &:before{ 
+    content: "\e68b";
+    color: @gray_six;
+    }
+}
+}
+.search-bar-label{
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    bottom:1px;
+    left:1px;
+    .round(10px);
+    z-index:2;
+    background-color: @white;  
+    line-height:@search_h;
+    span{
+        font-size: @text_L_size;
+        display: inline-block;
+    }
+}
+.search-bar-cancelbtn {
+    display: none;
+    font-size: @text_XL_size;
+    margin-left:@num4;
+    line-height: @search_h;
+    color: @icon_success;
+    white-space: nowrap;
+}
+
+.searchbar{
+    .wireframe{
+      margin-top: 0;
+       .wireframe-part{
+           height: @wireframe_h;
+           line-height: @wireframe_h;
+       }
+    }
+}
+.search-bar-result{
+    display: none;
+}
+.search-part{
+    margin-top: @num5;
+    padding: 0 @num3 0 ;
+    .search-part-box{
+        width: 60%;
+        height:@search_h ;
+        border:1px solid @border_line;           
+        background: @white;
+        .round(3px);
+        padding: 0 @num2;
+    }
+    .but-common{
+        margin-top: 0;
+        margin-left: @num3;
+    }
+}

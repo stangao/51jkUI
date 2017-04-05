@@ -1,0 +1,68 @@
+@import "colors.less";
+@import "size.less";
+@import "layout.less";
+@import "css3.less";
+@import "button.less";
+
+.actionsheet{
+    .but-common{
+        margin-top: @num5;
+    }
+}
+
+.page-mask{
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left:0;
+}
+.ios-actionsheet{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    .pre(backface-visibility,hidden);
+    .pre(transition,transform .3s);
+    z-index: 5000;
+    width: 100%;
+    background-color: @bg_color;
+    .pre(transform,translate(0, 100%))
+}
+.ios-actionsheet-menu{
+    background: @white;
+}
+.ios-actionsheet-cell{
+    position: relative;
+    padding: @num4 0;
+    font-size: @text_L_size;
+    border-bottom: 1px  solid @border_line;
+    &:last-child{
+        border-bottom: 0;
+    }
+    &:active{
+        background-color: @border_on_bg;
+    }
+}
+.ios-actionsheet-action{
+    margin-top: @num4;
+    background-color: @white;
+}
+.android-actionsheet{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    .pre(transform,translate(-50%, -50%));
+    .pre(box-sizing,border-box);
+    .pre(backface-visibility,hidden);
+    background: transparent;
+    .pre(transition,transform .3s);
+    z-index: 5000;
+    width: 246px;
+}
+.actionsheet-toggle{
+    .pre(transform,translate(0, 0));
+}
+

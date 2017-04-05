@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" id="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="telephone=no" name="format-detection">
+		<title>弹出式菜单</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/actionsheet.css" />
+		<script type="text/javascript" src="js/layout.js"></script>
+	</head>
+
+	<body>
+		<div class="contiainer">
+			<div class="page actionsheet">
+				<div class="page-hd">
+					<h2>ActionSheet</h2>
+					<p>弹出式菜单</p>
+				</div>
+				<div class="page-bd page-bd-spacing operation">
+					<a href="javascript:;" class="but-common but-default but-XL-size " id="showIOSActionSheet">ios Actionsheet</a>
+					<a href="javascript:;" class="but-common but-default but-XL-size" id="showAndroidActionSheet">Android Actionsheet</a>
+
+				</div>
+				<div class="ios-show-list">
+					<div class="page-mask" id="ios-mask" style="display: none;"></div>
+					<div class="ios-actionsheet" id="iosActionsheet">
+						<div class="ios-actionsheet-menu">
+							<div class="ios-actionsheet-cell">示列菜单</div>
+							<div class="ios-actionsheet-cell">示列菜单</div>
+							<div class="ios-actionsheet-cell">示列菜单</div>
+							<div class="ios-actionsheet-cell">示列菜单</div>
+						</div>
+						<div class="ios-actionsheet-action">
+							<div class="ios-actionsheet-cell" id="iosActionsheetCancel">取消</div>
+						</div>
+					</div>
+				</div>
+				<div class="android-show-list" id="androidActionsheet" style="display: none;">
+					<div class="page-mask"></div>
+					<div class="android-actionsheet">
+						<div class="ios-actionsheet-menu">
+							<div class="ios-actionsheet-cell">示列菜单</div>
+							<div class="ios-actionsheet-cell">示列菜单</div>
+							<div class="ios-actionsheet-cell">示列菜单</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="page-ft">
+					<a href="javascript:home()">
+						<img src="images/icon_footer_link.png" />
+					</a>
+				</div>
+
+			</div>
+		</div>
+		<script src="js/zepto.min.js"></script>
+		<script class="actionsheet">
+			//ios
+			$(function() {
+				var $iosActionsheet = $("#iosActionsheet");
+				var $iosMask = $("#ios-mask");
+
+				function hiddenActonSheet() {
+					$iosActionsheet.removeClass("actionsheet-toggle");
+					$iosMask.fadeOut(200);
+				}
+				$iosMask.on("click", hiddenActonSheet);
+				$("#iosActionsheetCancel").on("click", hiddenActonSheet);
+				$("#showIOSActionSheet").on("click", function() {
+					$iosActionsheet.addClass("actionsheet-toggle");
+					$iosMask.fadeIn(200);
+				});
+			});
+			//android
+			$(function() {
+				var $androidActionsheet = $("#androidActionsheet");
+				var $androidMask = $(".page-mask");
+
+				$("#showAndroidActionSheet").on("click", function() {
+					$androidActionsheet.fadeIn(200);
+					$androidMask.on("click", function() {
+						$androidActionsheet.fadeOut(200);
+					})
+				})
+
+			});
+		</script>
+	</body>
+
+</html>

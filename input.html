@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" id="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="telephone=no" name="format-detection">
+		<title>表单列表</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/input.css" />
+		<script type="text/javascript" src="js/layout.js"></script>
+	</head>
+
+	<body class="bg_color">
+		<div class="contiainer">
+			<div class="page input">
+				<div class="page-hd">
+					<h2>Input</h2>
+					<p>表单输入</p>
+				</div>
+				<div class="page-bd">
+
+					<!--单选列表项--->
+					<div class="input-title">单选列表项</div>
+					<div class="wireframe wireframe-input  input-radio ">
+						<label class="wireframe-part  flex-cont flex-simple" for="x11">
+    <div class="flex-item input-center-bd"><p >单选列表项</p></div>
+   <div class="input-center-ft">
+   <input type="radio"   class="input-check" name="radio1" id="x11">
+   <span class="iconfont  input-icon-checked"></span>
+  </div>
+	</label>
+
+						<label class="wireframe-part flex-cont flex-simple" for="x12">
+    <div class="flex-item input-center-bd"><p >单选列表项</p></div>
+   <div class="input-center-ft">
+   <input type="radio"   class="input-check" name="radio1" id="x12" checked="checked">
+   <span class="iconfont  input-icon-checked"></span>
+  </div>
+	</label>
+						<div class="wireframe-link">
+							<p>添加更多</p>
+						</div>
+					</div>
+
+					<!--复选列表项--->
+					<div class="input-title">复选列表项</div>
+					<div class="wireframe wireframe-input  input-checkbox">
+						<label class="wireframe-part  flex-cont flex-simple" for="s11">
+	<div class="input-center-ft">
+<input type="checkbox"  class="input-check" name="checkbox1" id="s11" checked="checked">
+<span class="iconfont input-icon-checked  icon-yuanquan"></span>
+
+</div>
+<div class="flex-item input-center-bd"><p >复选列表项</p></div>	
+	</label>
+						<label class="wireframe-part  flex-cont flex-simple" for="s12">
+		<div class="input-center-ft">
+<input type="checkbox"  class="input-check" name="checkbox1" id="s12" >
+<span class="iconfont input-icon-checked  icon-yuanquan"></span>
+</div>
+<div class="flex-item input-center-bd"><p >复选列表项</p></div>
+
+	</label>
+						<div class="wireframe-link">
+							<p>添加更多</p>
+						</div>
+					</div>
+
+					<!--表单--->
+					<div class="input-title">表单</div>
+					<div class="wireframe wireframe-input input-from">
+						<div class="wireframe-part  flex-cont flex-simple">
+							<div class="input-center-hd"><label class="input-label">qq</label></div>
+							<div class="input-center-bd flex-item"><input class="input-inputs" type="number" pattern="[0-9]*" placeholder="请输入qq号" /></div>
+						</div>
+						<div class="wireframe-part  input-center-vcode flex-cont flex-simple">
+							<div class="input-center-hd"><label class="input-label">手机号</label></div>
+							<div class="input-center-bd flex-item"><input class="input-inputs" type="tel" placeholder="请输入手机号" /></div>
+							<div class="input-center-ft"><input class="input-vcode-btn" type="button" value="获取验证码" onclick="time(this)" /> </div>
+						</div>
+						<div class="wireframe-part  flex-cont flex-simple">
+							<div class="input-center-hd"><label class="input-label">日期</label></div>
+							<div class="input-center-bd flex-item"><input class="input-inputs" type="date" value="" /></div>
+						</div>
+						<div class="wireframe-part flex-cont flex-simple">
+							<div class="input-center-hd"><label class="input-label">时间</label></div>
+							<div class="input-center-bd flex-item"><input class="input-inputs" type="datetime-local" value="" placeholder="" /></div>
+						</div>
+						<div class="wireframe-part input-center-vcode input-center-yzm flex-cont flex-simple">
+							<div class="input-center-hd"><label class="input-label">验证码</label></div>
+							<div class="input-center-bd flex-item"><input class="input-inputs" type="tel" placeholder="请输入验证码" id="input_codetext" maxlength="4" /></div>
+							<!--<div class="input-center-ft"><input class="input-vcode-btn yzm" type="button" id="input-code" onclick="createCode()" /> </div>-->
+							<div class="input-center-ft"><canvas class="input-vcode-btn yzm" id="myCanvas" onclick="createCode()">Your browser does not support the canvas element.</canvas> </div>
+						</div>
+					</div>
+
+					<!--表单报错--->
+					<div class="input-title">底部说明文字</div>
+					<div class="input-title">表单报错</div>
+					<div class="wireframe wireframe-input input-warn">
+						<div class="wireframe-part  flex-cont flex-simple">
+							<div class="input-center-hd"><label class="input-label">卡号</label></div>
+							<div class="input-center-bd flex-item"><input class="input-inputs" type="number" placeholder="请输入卡号" pattern="[0-9]*" /></div>
+							<div class="input-center-ft"><span class="iconfont icon-jinggao"></span></div>
+						</div>
+
+					</div>
+
+					<!--开关--->
+					<div class="input-title">开关</div>
+					<div class="wireframe wireframe-input input-switch ">
+						<div class="wireframe-part  flex-cont flex-simple">
+							<div class="input-center-bd flex-item">标题文字</div>
+							<div class="input-center-ft ">
+								<input type="checkbox" class="switch-center" />
+							</div>
+						</div>
+					</div>
+
+					<!--文本框--->
+					<div class="input-title">文本框</div>
+					<div class="wireframe wireframe-input">
+						<div class="wireframe-part"><input class="input-inputs" type="text" placeholder="请输入文本" /></div>
+					</div>
+
+					<!--文本域--->
+					<div class="input-title">文本域</div>
+					<div class="wireframe wireframe-input wireframe-input-textarea">
+						<div class="wireframe-part">
+							<textarea class="input-textarea" placeholder="请输入文本" rows="3" oninput="changeLength()"></textarea>
+							<div class="input-textarea-counter">
+								<i class="current-num">0</i>/<i class="tatal-num">200</i>
+							</div>
+						</div>
+					</div>
+
+					<!--选择--->
+					<div class="input-title">选择</div>
+					<div class="wireframe wireframe-input input-select input-select-before">
+						<div class="wireframe-part flex-cont flex-simple">
+							<div class="input-center-hd ">
+								<select name="selst2" class="select-center">
+									<option value="1">+86</option>
+									<option value="2">+80</option>
+									<option value="3">+84</option>
+									<option value="4">+87</option>
+								</select>
+							</div>
+							<div class="input-center-bd flex-item"> <input class="input-inputs" type="tel" placeholder="请输入号码" /></div>
+						</div>
+					</div>
+
+					<!--选择--->
+					<div class="input-title">选择</div>
+					<div class="wireframe wireframe-input input-select input-select-after">
+						<div class="wireframe-part input-center-bd">
+							<select name="selst1" class="select-center">
+								<option value="1">微信号</option>
+								<option value="2">QQ号</option>
+								<option value="3">Email</option>
+
+							</select>
+						</div>
+						<div class="wireframe-part flex-cont flex-simple">
+							<div class="input-center-hd ">国家/地区</div>
+							<div class="input-center-bd flex-item">
+								<select name="selst1" class="select-center">
+									<option value="1">中国</option>
+									<option value="2">美国</option>
+									<option value="3">英国</option>
+
+								</select>
+							</div>
+
+						</div>
+					</div>
+
+					<label for="inputAgree" class="input-agreee">
+<input type="checkbox" id="inputAgree"  class="input-agree-checkbox"/>
+<span class="input-agree-text"><i>阅读并同意</i><a href="javascripe:;">《相关条款》</a></span>
+</label>
+
+					<div class="wrapper-common">
+						<a href="javascript:;" class="but-common but-primary but-XL-size" onclick="validate()">确定</a>
+					</div>
+				</div>
+				<div class="page-ft">
+					<a href="javascript:home()">
+						<img src="images/icon_footer_link.png" />
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/zepto.min.js"></script>
+		<script src="js/base.js"></script>
+		<script type="text/javascript">
+			var wait = 60;
+
+			function time(o) {
+				if(wait == 0) {
+					o.removeAttribute("disabled");
+					o.value = "获取验证码";
+					wait = 60;
+				} else {
+					o.setAttribute("disabled", true);
+					o.value = "重新发送(" + wait + ")";
+					wait--;
+					setTimeout(function() {
+							time(o)
+						},
+						1000)
+				}
+			}
+			//文本域
+			function changeLength() {
+				var txtlength = $('.input-textarea').val().length;
+				var str = parseInt(200 - txtlength)
+				if(str > -1) {
+					/*console.log(str);*/
+					$('.tatal-num').html(str);
+					$('.current-num').html(txtlength);
+
+				} else {
+					$('.input-textarea').val($('.input-textarea').val().substring(0, 200));
+				}
+			}
+
+			/**js生成验证码**/
+			var code; //在全局定义验证码   
+			//产生验证码  
+			window.onload = createCode();
+
+			function showCheck(a) { /* 显示验证码图片 */
+				var c = document.getElementById("myCanvas");
+				var ctx = c.getContext("2d");
+				ctx.clearRect(0, 0, 1000, 1000);
+				ctx.fillStyle = "white";
+				ctx.font = "80px Arial";
+				ctx.fillText(a, 0, 100);
+
+			}
+
+			function createCode() {
+				code = "";
+				var codeLength = 4; //验证码的长度  
+				var random = new Array(1, 2, 3, 4, 5, 6, 7, 8, 9, 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'); //随机数
+				for(var i = 0; i < codeLength; i++) { //循环操作  
+					var index = Math.floor(Math.random() * 60); //取得随机数的索引（0~61）  
+					code += random[index]; //根据索引取得随机数加到code上  
+				}
+				if(code.length != codeLength) {
+					createCode();
+				}
+				showCheck(code);
+			}
+			//校验验证码  
+			function validate() {
+				var inputCode = document.getElementById("input_codetext").value.toUpperCase(); //取得输入的验证码并转化为大写
+				var codeToUp = code.toUpperCase();
+				if(inputCode.length <= 0) { //若输入的验证码长度为0  
+					document.getElementById("input_codetext").setAttribute("placeholder", "请输入验证码");
+					alert("请输入验证码");
+					createCode();
+					return false;
+				} else if(inputCode != codeToUp) { //若输入的验证码与产生的验证码不一致时  
+					alert("验证码输入错误");
+					document.getElementById("input_codetext").value = " ";
+					document.getElementById("input_codetext").setAttribute("placeholder", "Error");
+					createCode();
+					return false;
+
+				} else { //输入正确时  
+					alert("^-^"); //弹出^-^  
+				}
+			}
+		</script>
+	</body>
+
+</html>

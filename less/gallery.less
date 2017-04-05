@@ -1,0 +1,43 @@
+@import "colors.less";
+@import "size.less";
+@import "layout.less";
+@import "css3.less";
+@import "flex.less";
+@import "iconfont.less";
+
+.gallery-center{
+    background-color: @black;
+    position: fixed;
+    top: 0;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index: 100;
+    display:none;
+}
+.gallery-img{
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 60px;
+   left:0;
+   background: center center no-repeat;
+   background-size: contain;
+}
+.gallery-opr{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left:0;
+    background-color: #0D0D0D;
+    color: @white;
+    line-height: 60px;
+    text-align: @center;
+}
+.gallery-del{
+    display: block;
+    .icon-lajitongcu{
+        color:@white;
+        font-size: @num8;
+    }
+}

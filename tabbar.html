@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" id="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="telephone=no" name="format-detection">
+		<title>tabbar</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/tabbar.css" />
+		<script type="text/javascript" src="js/layout.js"></script>
+	</head>
+
+	<body class="bg_color">
+		<div class="contiainer">
+			<div class="page tabbar">
+				<div class="page-hd">
+					<h2>Tabbar</h2>
+					<p>tab导航</p>
+				</div>
+				<div class="page-bd ">
+					<div class="page-tab">
+						<div class="tabbar-center flex-cont flex-tab">
+							<li class="tab-item on">
+								<a href="javascript:;">
+									<img src="images/icon_tabbar.png" />
+									<p>微信</p>
+								</a>
+							</li>
+
+							<li class="tab-item ">
+								<a href="javascript:;">
+									<img src="images/icon_tabbar.png" />
+									<p>通讯录</p>
+								</a>
+							</li>
+
+							<li class="tab-item">
+								<a href="javascript:;">
+									<img src="images/icon_tabbar.png" />
+									<p>发现</p>
+								</a>
+							</li>
+
+							<li class="tab-item">
+								<a href="javascript:;">
+									<img src="images/icon_tabbar.png" />
+									<p>我</p>
+								</a>
+							</li>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<script src="js/zepto.min.js"></script>
+		<script src="js/base.js"></script>
+		<script>
+			$(function() {
+				$('.tab-item').tabchange();
+			})
+		</script>
+	</body>
+
+</html>

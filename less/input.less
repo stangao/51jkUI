@@ -1,0 +1,316 @@
+@import "colors.less";
+@import "size.less";
+@import "layout.less";
+@import "css3.less";
+@import "flex.less";
+@import "button.less";
+@import "iconfont.less";
+
+
+.wireframe-input{
+    .wireframe-part{
+      height: @wireframe_h;
+     line-height: @wireframe_h;     
+     padding-top: @num3;
+      padding-bottom: @num3;
+      &.input-center-vcode{
+         height: @wireframe_h2;  
+      }
+      
+    }
+}
+.input-select-before{
+   .wireframe-part{
+      height: @wireframe_h2;   
+      .input-center-hd{
+      line-height: @wireframe_h2;
+   }  
+   } 
+   
+}
+.input-title{
+ font-size: @num3;
+ text-align: @left;
+ padding: @num4;  
+ padding-bottom: 0; 
+}
+
+
+.input-radio .wireframe-part,.input-checkbox .wireframe-part{
+    &:active{
+       background-color: @border_on_bg;
+    }
+}
+.input-check{
+    position: absolute;
+    left:-9999rem;
+}
+.input-icon-checked{  
+   margin: @num3; 
+   font-size: @num8; 
+   color:@gray_c;
+}
+.input-radio  .input-check:checked + .input-icon-checked{
+   &:before{
+      content: "\e689";
+      font-size: @num5;
+      color:@icon_success;    
+   }
+}
+
+.input-checkbox  .input-check:checked + .input-icon-checked{
+   &:before{
+     content: "\e68d";
+     font-size: @num8; 
+     color:@icon_success;    
+   }
+}
+/*表单*/
+.input-label{
+    width:@num30;
+    display:block;
+    text-align: @left;
+    
+}
+.input-inputs{
+    border:none;
+    width: 100%;
+    height: @wireframe_h;
+    line-height: @wireframe_h;
+    .pre(appearance,none);   
+    color: @gray_c;
+}
+.input-vcode-btn{
+  .pre(appearance,none);
+   border:none;  
+   color: @icon_success;
+    border-left:1px solid @border_line;
+   line-height: @wireframe_h2;
+    width:@num30;
+    &.yzm{
+ background: @icon_prompt;  
+ color: @white; 
+ font-style: italic; 
+ font-size: @header_size;
+ float: right;
+height:@wireframe_h2;
+
+}
+}
+
+ .wireframe-part.input-center-vcode{
+    padding:0 @num4;
+   
+}
+ .wireframe-part.input-center-yzm{
+    padding: 0 0 0 @num4;  
+    canvas{
+        width: 2.0rem;     
+        padding-left: @num5;
+    }  
+}
+
+/*表单报错*/
+.input-warn{
+    .input-label,.input-inputs,.icon-jinggao{
+        color:@icon_warn;
+    }
+    .icon-iconfontjinggao{
+        font-size: @num8;     
+        margin-right:@num8;
+        display: inline-block;      
+    }
+}
+/*开关*/
+.input-switch{
+    text-align: @left;
+    font-size: @text_XL_size;
+}
+.switch-center{
+   .pre(appearance,none);
+    position: relative;
+    width: 52px;
+    height: 32px;
+    border: 1px solid @border_line;
+    .round(16px);
+    box-sizing: border-box;
+    background-color: @border_line;
+    transition: background-color .1s, border .1s;
+    /*top:@num3;*/
+     &:before{
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50px;
+        height:30px;
+       .round(15px);
+        background-color:@switch_bg1;
+        transition:transform .35s cubic-bezier(0.45, 1, 0.4, 1);
+    }
+    &:after{
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width:30px;
+        height:30px;
+        .round(15px);
+        background-color: @white;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+        transition:transform .35s cubic-bezier(0.4, 0.4, 0.25, 1.35);
+    }
+
+    &:checked{
+        border-color: @switch_bg2;
+        background-color: @switch_bg2;
+        &:before{
+            transform: scale(0);
+        }
+        &:after{
+            transform: translateX(20px);
+        }
+    }
+}
+/*文本域*/
+.wireframe-input-textarea{
+    .wireframe-part{
+        height: auto;
+         line-height: initial;
+    }
+}
+.input-textarea{
+    display: block;
+    border: 0;
+    resize: none;
+    width: 100%;
+    color: inherit;
+    line-height: inherit;
+    outline: 0;
+    padding-top: @num4;
+}
+.input-textarea-counter{
+    font-size: @text_L_size;
+    text-align: @right;
+    color: @gray_c;
+}
+/*选择*/
+.input-select-before{
+  .wireframe-part{
+    padding: 0 0;
+    }
+  .input-center-hd {
+    position:relative;
+    width: @num30;
+    text-align: @left;
+    border-right: 1px solid @border_line;
+    line-height: ;
+  &:before{
+      content: " ";
+      display: inline-block;
+      height: 6px;
+      width: 6px;
+      border-width: 2px 2px 0 0;
+      border-color:@border_line;
+      border-style: solid;
+      .pre(transform,matrix(0.71, 0.71, -0.71, 0.71, 0, 0));
+      position:absolute;
+      top:50%;
+      right: 15px;
+      margin-top: -3px;
+  }  
+}
+.input-inputs{
+    padding:0  @num4;
+    width: auto;
+  
+}
+
+}
+.select-center{
+    .pre(appearance,none);
+    border:0;
+    outline: 0;
+    font-size: @text_XL_size;
+     width: @num30;
+     padding-left: @num4;
+     padding-right: @num2;
+     position: relative;
+     z-index: 1;  
+     background-color:transparent; 
+     line-height: ;
+  }
+  
+.input-select-after {
+    .wireframe-part{
+        padding: @num3 0;
+        text-align: @left;
+    }
+    .input-center-bd{
+       
+      &:after{
+      content: " ";
+      display: inline-block;
+      height: 6px;
+      width: 6px;
+      border-width: 2px 2px 0 0;
+      border-color:@border_line;
+      border-style: solid;
+      .pre(transform,matrix(0.71, 0.71, -0.71, 0.71, 0, 0));
+      position:absolute;
+      top:50%;
+      right: 15px;
+      margin-top: -3px;
+    }  
+    }
+    .select-center{
+        width: 100%;
+    }
+    .input-center-hd{
+        width: @num30;
+        padding-left: @num4;
+        color:@black;
+        font-size:@text_L_size ;
+    }
+    
+}
+
+/*同意*/
+.input-agreee{
+   font-size:@text_M_size ;
+   padding: @num3;
+   display: block;
+   text-align: @left;
+}
+.input-agree-checkbox{
+    .pre(appearance,none);
+    border:1px solid @border_line;
+    .round(3px);
+    width: 13px;
+    height: 13px;
+    position: relative;
+    top: 2px;
+    vertical-align: 0;
+    background-color: @white;
+    &:checked{
+        &:before{
+    font-family:"iconfont" !important;
+    font-size:@num4;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\e689";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    .pre(transform,translate(-50%,-48%) scale(.73));
+    color: @icon_success;    
+        }
+    }
+}
+.input-agree-text{
+    a{
+        color:@text_link;
+    }
+}

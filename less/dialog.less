@@ -1,0 +1,89 @@
+@import "colors.less";
+@import "size.less";
+@import "layout.less";
+@import "css3.less";
+@import "button.less";
+@import "flex.less";
+
+/*****弹窗*****/
+.popBox{ 
+    background-color:rgba(0,0,0,0.5); 
+    position: fixed;
+    z-index: 1000; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+    }
+.popCent{ 
+    background-color: @white; 
+    width: 272px;
+    position: absolute; 
+   
+    }
+.popTitle{ 
+    font-size: @header_size; 
+    padding: @num6  @num8;  
+    }
+.popContent{
+    font-size:  @text_L_size; 
+    text-align: @left; 
+    color: @gray_night; 
+    padding:0 @num8 @num4;
+    }
+.popBtnArea{
+    border-top: 1px solid @border_line;  
+    margin-top: @num4;
+    }
+.popBtnArea  button{ 
+    font-size: @text_L_size;   
+    padding: @num4 0; 
+    border: 0; 
+    color: @icon_success;
+   
+    }
+.popBtnArea  {
+    button{
+     &:first-child{        
+    border-right:1px solid @border_line;
+    color: @gray_six;
+    }
+   
+    }
+}
+#showIOSDialog1s{
+   button{
+     &:first-child{        
+   width:50%;
+    } 
+}
+}
+#showIOSDialog2s{
+   button{
+     &:first-child{        
+   border-right:none;
+    } 
+}
+}
+#showAndroidDialog1s,#showAndroidDialog2s{
+    .popTitle{
+        text-align: @left;
+    }
+    .popBtnArea{
+        border-top:none;
+    }
+    button{
+    &:first-child{        
+   border-right:none;
+   width: 60%;
+   text-align: @right;
+    } 
+    }
+    
+}
+
+.dialog{
+    .but-common{
+        margin-top: @num5;
+    }
+}

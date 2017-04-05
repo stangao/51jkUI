@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* 
+ * Description: skin.css
+ * Author:      gaonaibo,sundan
+ * Version:     1.0.0(update stan 2016-10-25 15:25)
+ * Website:     http://www.51jk.com/
+*/
+/* CSS Reset - Description :Reset skin for difference needs----------- */
+/**按钮*/
+/* 
+ * Description: layout.css
+ * Author:      sundan
+ * Version:     1.0.0(update stan 2016-10-25 15:25)
+ * Website:     http://www.51jk.com/
+*/
+/* CSS Reset - Description :用于demo展示，实际应用时不需要引用----------- */
+.article-center {
+  text-align: left;
+}
+.title-big {
+  font-size: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+.title-middle {
+  font-size: 0.45rem;
+  margin-bottom: 0.2rem;
+}
+.title-small {
+  font-size: 0.33rem;
+  margin-bottom: 0.2rem;
+}
+.article-center p {
+  font-size: 0.45rem;
+  margin-bottom: 0.3rem;
+}

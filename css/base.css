@@ -1,0 +1,527 @@
+@charset "utf-8";
+/* 
+ * Description: layout.css
+ * Author:      sundan
+ * Version:     1.0.0(update stan 2016-10-25 15:25)
+ * Website:     http://www.51jk.com/
+*/
+/* CSS Reset - Description :用于demo展示，实际应用时不需要引用----------- */
+/*
+定义圆角
+@radius 圆角大小
+*/
+/*
+盒子阴影
+@right_left 右边阴影为正数 左边负数
+@bottom_top 下边阴影为正数 上边负数
+@box  阴影大小
+@box_color 阴影颜色
+*/
+/*背景渐变
+@start  渐变开始颜色
+@end  结束颜色
+*/
+/*
+透明度 或渐变 1为不透明 0透明
+css3 rgba(110, 142, 185, .4)!important;前三个是颜色值 后一个是透明值
+用来兼容所有浏览器
+*/
+/*
+ flex 用来实现弹性盒子布局
+ * */
+/*
+列布局
+@c1 列数
+@c2 列宽
+@c3 列间距
+@c4 边框样式
+*/
+/* 
+ * Description: skin.css
+ * Author:      gaonaibo,sundan
+ * Version:     1.0.0(update stan 2016-10-25 15:25)
+ * Website:     http://www.51jk.com/
+*/
+/* CSS Reset - Description :Reset skin for difference needs----------- */
+/**按钮*/
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+code,
+form,
+fieldset,
+legend,
+button,
+textarea,
+table,
+tbody,
+tfoot,
+thead,
+th,
+td,
+article,
+aside,
+dialog,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+time,
+mark,
+audio,
+video,
+input,
+a,
+img,
+button,
+form,
+details,
+figcaption,
+em,
+i {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  background: transparent;
+}
+/* 取消链接高亮 */
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/* 去除iPhone中默认的input样式 */
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input[type="search"],
+input[type="text"],
+input[type="tel"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  resize: none;
+  outline: none;
+}
+input[type="button"] {
+  border-radius: 0;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+  display: none;
+}
+/* 设置HTML5元素为块 */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+/*
+body,button, input, select, textarea{
+	font:14px/1.5 Arial,SimHei;
+	}
+	*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
+address,
+cite,
+dfn,
+var,
+em,
+i,
+strong {
+  font-style: normal;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: courier new, courier, monospace;
+}
+small {
+  font-size: 12px;
+}
+ul,
+ol,
+li,
+dl,
+dt,
+dd {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  outline: thin none;
+  /*font-family:Arial,SimHei;*/
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  -ms-tap-highlight-color: rgba(0, 0, 0, 0);
+  -o-tap-highlight-color: rgba(0, 0, 0, 0);
+  tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a:hover,
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+del {
+  text-decoration: line-through;
+}
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help;
+}
+legend {
+  color: #000;
+}
+fieldset,
+img {
+  border: 0;
+}
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* 统一上标和下标 */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+  vertical-align: text-top;
+}
+sub {
+  bottom: -0.25em;
+  vertical-align: text-bottom;
+}
+/* GLOBAL ---------------------------------------------------------------------- */
+/* 禁用iPhone中Safari的字号自动调整 */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-size: 60px;
+  overflow-y: scroll;
+}
+/* 初始化 */
+body {
+  font-family: 'Arial,SimHei ';
+  color: #666;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+}
+p {
+  text-align: left;
+}
+/* 图片自适应 */
+img {
+  width: 100%;
+  height: auto;
+  width: auto\9;
+  /* ie8 */
+  border: none;
+  -ms-interpolation-mode: bicubic;
+  /*为了照顾ie图片缩放失真*/
+}
+/* 清除浮动 */
+.clearfix:after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+}
+.clearfix {
+  display: inline-block;
+  zoom: 1;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.w-all {
+  width: 100%;
+}
+.po-re {
+  position: relative;
+}
+.po-ab {
+  position: absolute;
+}
+.hidden {
+  display: none;
+}
+.show {
+  display: block;
+}
+*html .clearfix {
+  height: 1%;
+}
+.Clearfix {
+  display: block;
+}
+/* 重设 HTML5 标签, IE 需要在 js 中 createElement(TAG) */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+/* HTML5 媒体文件跟 img 保持一致 */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+/* 单行截字，多出用省略号 */
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/* 多行截字，多出用省略号(注意此方法只适用于H5浏览器) */
+.line-clamp {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.jj-title {
+  margin: 1rem 0;
+}
+.wrapper-common {
+  margin: 0.5rem;
+}
+.bg_color {
+  background-color: #f8f8f8;
+}
+/*公用布局*/
+.container,
+.page {
+  overflow-y: auto;
+  z-index: 1;
+}
+.page {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #f8f8f8;
+}
+.page .js-show {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  -ms-opacity: 1;
+  -o-opacity: 1;
+  opacity: 1;
+}
+.page-hd {
+  padding: 1rem;
+  text-align: left;
+}
+.page-hd h2 {
+  font-size: 0.55rem;
+  padding-bottom: 0.5rem;
+}
+.page-hd p {
+  font-size: 0.45rem;
+}
+.page-bd-spacing {
+  padding: 0 0.4rem;
+}
+.page-ft {
+  padding: 1rem 0;
+  width: 100%;
+}
+.page-ft img {
+  width: 2.24rem;
+}
+.page-ft.j-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+/*公用线框*/
+.wireframe {
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  background: #ffffff;
+  margin-top: 0.5rem;
+  font-size: 0.45rem;
+  display: inline-block;
+  width: 100%;
+}
+.wireframe .wireframe-part {
+  position: relative;
+  padding: 0 0.4rem;
+  /*overflow:hidden;*/
+}
+.wireframe .wireframe-part:first-child:before {
+  border-top: 0;
+}
+.wireframe .wireframe-part:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 1px;
+  border-top: 1px solid #d9d9d9;
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scaleY(0.5);
+  -moz-transform: scaleY(0.5);
+  -ms-transform: scaleY(0.5);
+  -o-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  left: 0.5rem;
+}
+.wireframe .wireframe-link {
+  position: relative;
+  padding: 0.4rem;
+  color: #586c94;
+}
+.wireframe .wireframe-link:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 1px;
+  border-top: 1px solid #d9d9d9;
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scaleY(0.5);
+  -moz-transform: scaleY(0.5);
+  -ms-transform: scaleY(0.5);
+  -o-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  left: 0.5rem;
+}
+.wireframe .wireframe-link:active {
+  background: #ececec;
+}

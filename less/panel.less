@@ -1,0 +1,269 @@
+@import "colors.less";
+@import "size.less";
+@import "layout.less";
+@import "css3.less";
+@import "flex.less";
+@import "button.less";
+
+.wireframe-panel{
+    .wireframe-part{
+     padding: @num3;
+     &:active{
+        background-color:@border_on_bg;
+    }
+    }
+    
+}
+
+.panel-title{
+    font-size: @num3;
+    text-align: @left;
+    padding: @num4;
+}
+.panel-bd-describe{
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color:@gray_six;
+    margin: @num2 0;
+    
+}
+.panel-money{
+    color: @icon_warn;
+}
+.pannel-bd-text{
+   color:@gray_six;
+   text-align: left; 
+   .panel-money{
+       margin-left: @num3;
+   }
+}
+.panel-center,.panel-link{
+    position:relative;
+    padding: @num4 0;
+    
+   &:before{
+    content:" ";
+    position:absolute;
+    left: 0;
+    top: 0;
+    right:0;
+    height:1px;
+    border-top:1px solid @border_line;
+   .pre(transform-origin,0 0);
+   .pre(transform,scaleY(0.5));
+    left:@num5;
+  }  
+    
+}
+
+
+.panel-hd{
+    width:@num20;
+    height:@num20;
+    margin-right: @num3;
+    
+}
+.panel-bd{
+    text-align: @left;  
+   
+}
+.panel-bd-title{
+  font-size: @num4; 
+   color:@black;
+   padding-bottom: @num1;
+}
+.panel-bd-tips{
+   color:@gray_six; 
+   font-size: @text_M_size;
+}
+.wireframe-link {
+    .panel-link-look{
+  
+   color:@text_link; 
+}
+
+&:active{
+        background-color:@border_on_bg;
+    }
+}
+.panel-link-ft{
+   &:after{
+  content: " ";
+  position: absolute;
+  top: 50%;
+  right: @num5;
+  height: @num3;
+  width: @num3;
+  border-width: @num1 @num1 0 0;
+  border-color:@border_line;
+  border-style: solid;
+  .pre(transform,matrix(0.71, 0.71, -0.71, 0.71, 0, 0));
+  margin-top: -@num2; 
+    }
+ 
+}
+.panel-part-text {
+    .wireframe-part{
+      &:active{
+        background-color:inherit;
+    }   
+    }
+   .panel-bd-tips{
+       margin-top: @num3;
+   }
+    
+}
+.panel-small-hd{
+    width:0.6rem ;
+    height:0.6rem;
+    margin-right: @num3;
+}
+.panel-small-bd {
+  color: @gray_six;   
+}
+.pannel-center-list{
+    padding:  @num4;
+    text-align: @left;
+     
+    .panel-bd-title{
+        margin-bottom: @num3;
+        
+    }    
+}
+.panel-ms{
+    margin-top: @num3;
+    color: @gray_c;
+    p{
+        display: inline-block;
+        }
+    .panel-ms-come{
+        padding-right: @num3;
+        }
+    .panel-ms-time{ 
+        padding-right: @num3;
+        }
+    .panel-ms-others{ 
+        border-left:1px solid @border_line; 
+        padding-left: @num3;
+        }
+}
+.pannel-part-list{
+    .wireframe-part{
+      &:active{
+        background-color:inherit;
+    }   
+    }
+}
+
+.pannel-list{
+    font-size: @text_L_size;
+    margin: @num3 0;
+    .pannel-list-title{
+        width: 30%;
+        text-align: left;
+    }
+    .pannel-list-text{
+        text-align: left;
+    }
+    .but-common{
+        margin-top: 0;
+    }
+}
+.pannel-block{
+    padding: @num3 0;
+   
+   h2{
+       font-size: @num_XL_size;
+       color: @money;
+       margin: @num3 0;
+   }
+   h3{
+        font-size: @text_L_size;
+   }
+   .wireframe-part{
+      padding:0 @num3;
+       &:active{
+           background-color:initial;
+       }
+   }
+   .pannel-block-text{
+       text-align: center;
+       margin-top: @num3;
+       i{
+           color: @money;
+       }
+   }
+}
+.pannel-domain{
+    text-align: left;
+    font-size:  @text_L_size;
+    color: @gray_c;
+    &.hd{
+     font-size: @text_XL_size;   
+     color: @gray_six;
+     margin-bottom: @num3;
+       p{
+         color: @money;
+     }
+    }
+  
+}
+
+.pannel-tab{
+ ul{
+     border-bottom:1px solid @border_line;
+     padding: @num4 0;
+      
+     li{
+         display: inline-block; 
+         text-align: @center;  
+     }
+    
+ }  
+}
+
+
+.flex-teamlist { 
+    &.header{
+      background: #ff9945; 
+      padding: @num2 0; 
+      font-size:@text_L_size;
+      border-bottom: none;  
+      li{
+       border-right:1px solid @white; 
+       color: @white;
+       padding: @num2 0; 
+        &:last-child{ 
+            border-right: 0;
+            }
+      }  
+     }  
+    li{
+        width:0%; 
+        position: relative;
+        display: block;      
+        .pre(box-sizing,border-box);
+        .pre(flex,1);
+        .pre(box-flex,1);
+       
+        } 
+        .level{ 
+            width: 15%; 
+            span{
+                padding: 0rem @num2; 
+                font-size: @text_M_size; 
+                display: inline-block;
+                }
+                }
+       
+        .tjr { 
+            width: 36%;
+            }
+        .jrsj{ 
+            width: 36%;
+            }
+    }
+
+

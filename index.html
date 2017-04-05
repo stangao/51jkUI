@@ -1,0 +1,1988 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" id="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="telephone=no" name="format-detection">
+		<title>WeUI</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<script type="text/javascript" src="js/layout.js"></script>
+
+	</head>
+
+	<body class="bg_color" ontouchstart>
+		<div class="container" id="container"></div>
+		<script type="text/html" id="tpl-home">
+			<div class="page">
+				<div class="page-hd">
+					<h2>WeUI</h2>
+					<p>WeUI首页</p>
+				</div>
+				<div class="page-bd  page-bd-spacing">
+					<ul class="home-list">
+						<li>
+							<div class="home-title flex-cont flex-simple js-category">
+								<p class="flex-item">表单</p>
+								<i class="iconfont icon-sangeheng"></i>
+							</div>
+							<div class="page-category js-categoryInner">
+								<div class=" wireframe page-category-content">
+									<a class="wireframe-part flex-cont flex-simple js-item" data-id="button" href="javascript:;">
+										<div class="home-list-bd flex-item">
+											<p>Button</p>
+										</div>
+										<div class="home-list-ft"></div>
+									</a>
+									<a class="wireframe-part flex-cont flex-simple js-item" data-id="input" href="javascript:;">
+										<div class="home-list-bd flex-item">
+											<p>Input</p>
+										</div>
+										<div class="home-list-ft"></div>
+									</a>
+									<a class="wireframe-part flex-cont flex-simple js-item" data-id="list" href="javascript:;">
+										<div class="home-list-bd flex-item">
+											<p>List</p>
+										</div>
+										<div class="home-list-ft"></div>
+									</a>
+									<a class="wireframe-part flex-cont flex-simple js-item" data-id="uploader" href="javascript:;">
+										<div class="home-list-bd flex-item">
+											<p>Uploader</p>
+										</div>
+										<div class="home-list-ft"></div>
+									</a>
+
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="home-title flex-cont flex-simple js-category">
+								<p class="flex-item">基础组件</p>
+								<i class="iconfont icon-jichufuwu"></i>
+							</div>
+							<div class="page-category js-categoryInner">
+								<div class=" wireframe page-category-content">
+									<a class="wireframe-part flex-cont flex-simple js-item" data-id="article" href="javascript:;">
+										<div class="home-list-bd flex-item">
+											<p>Article</p>
+										</div>
+										<div class="home-list-ft"></div>
+									</a>
+									<a class="wireframe-part flex-cont flex-simple js-item" data-id="flex" href="javascript:;">
+										<div class="home-list-bd flex-item">
+											<p>Flex</p>
+										</div>
+										<div class="home-list-ft"></div>
+									</a>
+
+									<a class="wireframe-part flex-cont flex-simple js-item" data-id="footer" href="javascript:;">
+										<div class="home-list-bd flex-item">
+											<p>Footer</p>
+										</div>
+										<div class="home-list-ft"></div>
+									</a>
+									<a class="wireframe-part flex-cont flex-simple js-item" data-id="gallery" href="javascript:;">
+										<div class="home-list-bd flex-item">
+											<p>Gallery</p>
+										</div>
+										<div class="home-list-ft"></div>
+									</a>
+									<a class="wireframe-part flex-cont flex-simple js-item" data-id="grid" href="javascript:;">
+										<div class="home-list-bd flex-item">
+											<p>Grid</p>
+										</div>
+										<div class="home-list-ft"></div>
+									</a>
+									<a class="wireframe-part flex-cont flex-simple js-item" data-id="icons" href="javascript:;">
+										<div class="home-list-bd flex-item">
+											<p>Icons</p>
+										</div>
+										<div class="home-list-ft"></div>
+									</a>
+									<a class="wireframe-part flex-cont flex-simple js-item" data-id="loadmore" href="javascript:;">
+										<div class="home-list-bd flex-item">
+											<p>Loadmore</p>
+										</div>
+										<div class="home-list-ft"></div>
+									</a>
+									<a class="wireframe-part flex-cont flex-simple js-item" data-id="panel" href="javascript:;">
+										<div class="home-list-bd flex-item">
+											<p>Panel</p>
+										</div>
+										<div class="home-list-ft"></div>
+									</a>
+									<a class="wireframe-part flex-cont flex-simple js-item" data-id="preview" href="javascript:;">
+										<div class="home-list-bd flex-item">
+											<p>Preview</p>
+										</div>
+										<div class="home-list-ft"></div>
+									</a>
+									<a class="wireframe-part flex-cont flex-simple js-item" data-id="progress" href="javascript:;">
+										<div class="home-list-bd flex-item">
+											<p>Progress</p>
+										</div>
+										<div class="home-list-ft"></div>
+									</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="home-title flex-cont flex-simple js-category">
+								<p class="flex-item">操作反馈</p>
+								<i class="iconfont icon-chenggong1"></i>
+							</div>
+							<div class="page-category js-categoryInner">
+								<div class=" wireframe page-category-content">
+									<a class="wireframe-part flex-cont flex-simple js-item" data-id="actionsheet" href="javascript:;">
+										<div class="home-list-bd flex-item">
+											<p>Actionsheet</p>
+										</div>
+										<div class="home-list-ft"></div>
+									</a>
+									<a class="wireframe-part flex-cont flex-simple js-item" data-id="dialog" href="javascript:;">
+										<div class="home-list-bd flex-item">
+											<p>Dialog</p>
+										</div>
+										<div class="home-list-ft"></div>
+									</a>
+									<a class="wireframe-part flex-cont flex-simple js-item" data-id="msg" href="javascript:;">
+										<div class="home-list-bd flex-item">
+											<p>Msg</p>
+										</div>
+										<div class="home-list-ft"></div>
+									</a>
+									<a class="wireframe-part flex-cont flex-simple js-item" data-id="toast" href="javascript:;">
+										<div class="home-list-bd flex-item">
+											<p>Toast</p>
+										</div>
+										<div class="home-list-ft"></div>
+									</a>
+
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="home-title flex-cont flex-simple js-category">
+								<p class="flex-item">导航相关</p>
+								<i class="iconfont icon-3gedian"></i>
+							</div>
+							<div class="page-category js-categoryInner">
+								<div class=" wireframe page-category-content">
+									<a class="wireframe-part flex-cont flex-simple js-item" data-id="navbar" href="javascript:;">
+										<div class="home-list-bd flex-item">
+											<p>Navbar</p>
+										</div>
+										<div class="home-list-ft"></div>
+									</a>
+									<a class="wireframe-part flex-cont flex-simple js-item" data-id="tabbar" href="javascript:;">
+										<div class="home-list-bd flex-item">
+											<p>Tabbar</p>
+										</div>
+										<div class="home-list-ft"></div>
+									</a>
+
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="home-title flex-cont flex-simple js-category">
+								<p class="flex-item">搜索相关</p>
+								<i class="iconfont icon-534543"></i>
+							</div>
+							<div class="page-category js-categoryInner">
+								<div class=" wireframe page-category-content">
+									<a class="wireframe-part flex-cont flex-simple js-item" data-id="searchbar" href="javascript:;">
+										<div class="home-list-bd flex-item">
+											<p>Search Bar</p>
+										</div>
+										<div class="home-list-ft"></div>
+									</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!--		<div class="page-ft">
+			<a href="javascript:home()">
+				<img src="images/icon_footer_link.png" />
+			</a>
+		</div>-->
+			</div>
+			<script type="text/javascript">
+				$(function() {
+					var winH = $(window).height();
+					var categorySpace = 10;
+
+					$('.js-item').on('click', function() {
+						var id = $(this).data('id');
+						window.pageManager.go(id);
+					});
+					$('.js-category').on('click', function() {
+						var $this = $(this),
+							$inner = $this.next('.js-categoryInner'),
+							$page = $this.parents('.page'),
+							$parent = $(this).parent('li');
+						var innerH = $inner.data('height');
+						bear = $page;
+
+						if(!innerH) {
+							$inner.css('height', 'auto');
+							innerH = $inner.height();
+							$inner.removeAttr('style');
+							$inner.data('height', innerH);
+						}
+
+						if($parent.hasClass('js-show')) {
+							$parent.removeClass('js-show');
+						} else {
+							$parent.siblings().removeClass('js-show');
+
+							$parent.addClass('js-show');
+							if(this.offsetTop + this.offsetHeight + innerH > $page.scrollTop() + winH) {
+								var scrollTop = this.offsetTop + this.offsetHeight + innerH - winH + categorySpace;
+
+								if(scrollTop > this.offsetTop) {
+									scrollTop = this.offsetTop - categorySpace;
+								}
+
+								$page.scrollTop(scrollTop);
+							}
+						}
+					});
+				});
+			</script>
+		</script>
+		<script type="text/html" id="tpl-button">
+			<div class="page button">
+				<div class="page-hd">
+					<h2>Button</h2>
+					<p>按钮</p>
+				</div>
+				<div class="page-bd page-bd-spacing">
+					<p>XL按钮</p>
+					<a href="javascript:;" class="but-common but-primary but-XL-size">页面主要操作Normal</a>
+					<a href="javascript:;" class="but-common but-disabled but-primary but-XL-size">页面主要操作Normal</a>
+
+					<a href="javascript:;" class="but-common but-warn but-XL-size">页面警告操作Normal</a>
+					<a href="javascript:;" class="but-common but-disabled  but-warn but-XL-size">页面警告操作Normal</a>
+
+					<p>L按钮</p>
+					<a href="javascript:;" class="but-common but-L-size but-L-primary">按钮</a>
+					<p>M按钮</p>
+					<a href="javascript:;" class="but-common but-primary but-M-size ">按钮</a>
+					<a href="javascript:;" class="but-common but-disabled but-primary but-M-size ">按钮</a>
+
+					<a href="javascript:;" class="but-common but-warn but-M-size but-M-warn">按钮</a>
+					<a href="javascript:;" class="but-common but-disabled but-warn but-M-size but-M-warn">按钮</a>
+
+				</div>
+				<div class="page-ft">
+					<a href="javascript:home()">
+						<img src="images/icon_footer_link.png" />
+					</a>
+				</div>
+			</div>
+
+		</script>
+		<script type="text/html" id="tpl-input">
+			<div class="page input">
+				<div class="page-hd">
+					<h2>Input</h2>
+					<p>表单输入</p>
+				</div>
+				<div class="page-bd">
+
+					<!--单选列表项--->
+					<div class="input-title">单选列表项</div>
+					<div class="wireframe wireframe-input  input-radio ">
+						<label class="wireframe-part  flex-cont flex-simple" for="x11">
+    <div class="flex-item input-center-bd"><p >单选列表项</p></div>
+   <div class="input-center-ft">
+   <input type="radio"   class="input-check" name="radio1" id="x11">
+   <span class="iconfont  input-icon-checked"></span>
+  </div>
+	</label>
+
+						<label class="wireframe-part flex-cont flex-simple" for="x12">
+    <div class="flex-item input-center-bd"><p >单选列表项</p></div>
+   <div class="input-center-ft">
+   <input type="radio"   class="input-check" name="radio1" id="x12" checked="checked">
+   <span class="iconfont  input-icon-checked"></span>
+  </div>
+	</label>
+						<div class="wireframe-link">
+							<p>添加更多</p>
+						</div>
+					</div>
+
+					<!--复选列表项--->
+					<div class="input-title">复选列表项</div>
+					<div class="wireframe wireframe-input  input-checkbox">
+						<label class="wireframe-part  flex-cont flex-simple" for="s11">
+	<div class="input-center-ft">
+<input type="checkbox"  class="input-check" name="checkbox1" id="s11" checked="checked">
+<span class="iconfont input-icon-checked  icon-yuanquan"></span>
+
+</div>
+<div class="flex-item input-center-bd"><p >复选列表项</p></div>	
+	</label>
+						<label class="wireframe-part  flex-cont flex-simple" for="s12">
+		<div class="input-center-ft">
+<input type="checkbox"  class="input-check" name="checkbox1" id="s12" >
+<span class="iconfont input-icon-checked  icon-yuanquan"></span>
+</div>
+<div class="flex-item input-center-bd"><p >复选列表项</p></div>
+
+	</label>
+						<div class="wireframe-link">
+							<p>添加更多</p>
+						</div>
+					</div>
+
+					<!--表单--->
+					<div class="input-title">表单</div>
+					<div class="wireframe wireframe-input input-from">
+						<div class="wireframe-part  flex-cont flex-simple">
+							<div class="input-center-hd"><label class="input-label">qq</label></div>
+							<div class="input-center-bd flex-item"><input class="input-inputs" type="number" pattern="[0-9]*" placeholder="请输入qq号" /></div>
+						</div>
+						<div class="wireframe-part  input-center-vcode flex-cont flex-simple">
+							<div class="input-center-hd"><label class="input-label">手机号</label></div>
+							<div class="input-center-bd flex-item"><input class="input-inputs" type="tel" placeholder="请输入手机号" /></div>
+							<div class="input-center-ft"><input class="input-vcode-btn" type="button" value="获取验证码" onclick="time(this)" /> </div>
+						</div>
+						<div class="wireframe-part  flex-cont flex-simple">
+							<div class="input-center-hd"><label class="input-label">日期</label></div>
+							<div class="input-center-bd flex-item"><input class="input-inputs" type="date" value="" /></div>
+						</div>
+						<div class="wireframe-part flex-cont flex-simple">
+							<div class="input-center-hd"><label class="input-label">时间</label></div>
+							<div class="input-center-bd flex-item"><input class="input-inputs" type="datetime-local" value="" placeholder="" /></div>
+						</div>
+						<div class="wireframe-part input-center-vcode input-center-yzm flex-cont flex-simple">
+							<div class="input-center-hd"><label class="input-label">验证码</label></div>
+							<div class="input-center-bd flex-item"><input class="input-inputs" type="tel" placeholder="请输入验证码" id="input_codetext" maxlength="4" /></div>
+							<!--<div class="input-center-ft"><input class="input-vcode-btn yzm" type="button" id="input-code" onclick="createCode()" /> </div>-->
+							<div class="input-center-ft"><canvas class="input-vcode-btn yzm" id="myCanvas" onclick="createCode()">Your browser does not support the canvas element.</canvas> </div>
+						</div>
+					</div>
+
+					<!--表单报错--->
+					<div class="input-title">底部说明文字</div>
+					<div class="input-title">表单报错</div>
+					<div class="wireframe wireframe-input input-warn">
+						<div class="wireframe-part  flex-cont flex-simple">
+							<div class="input-center-hd"><label class="input-label">卡号</label></div>
+							<div class="input-center-bd flex-item"><input class="input-inputs" type="number" placeholder="请输入卡号" pattern="[0-9]*" /></div>
+							<div class="input-center-ft"><span class="iconfont icon-jinggao"></span></div>
+						</div>
+
+					</div>
+
+					<!--开关--->
+					<div class="input-title">开关</div>
+					<div class="wireframe wireframe-input input-switch ">
+						<div class="wireframe-part  flex-cont flex-simple">
+							<div class="input-center-bd flex-item">标题文字</div>
+							<div class="input-center-ft ">
+								<input type="checkbox" class="switch-center" />
+							</div>
+						</div>
+					</div>
+
+					<!--文本框--->
+					<div class="input-title">文本框</div>
+					<div class="wireframe wireframe-input">
+						<div class="wireframe-part"><input class="input-inputs" type="text" placeholder="请输入文本" /></div>
+					</div>
+
+					<!--文本域--->
+					<div class="input-title">文本域</div>
+					<div class="wireframe wireframe-input wireframe-input-textarea">
+						<div class="wireframe-part">
+							<textarea class="input-textarea" placeholder="请输入文本" rows="3" oninput="changeLength()"></textarea>
+							<div class="input-textarea-counter">
+								<i class="current-num">0</i>/<i class="tatal-num">200</i>
+							</div>
+						</div>
+					</div>
+
+					<!--选择--->
+					<div class="input-title">选择</div>
+					<div class="wireframe wireframe-input input-select input-select-before">
+						<div class="wireframe-part flex-cont flex-simple">
+							<div class="input-center-hd ">
+								<select name="selst2" class="select-center">
+									<option value="1">+86</option>
+									<option value="2">+80</option>
+									<option value="3">+84</option>
+									<option value="4">+87</option>
+								</select>
+							</div>
+							<div class="input-center-bd flex-item"> <input class="input-inputs" type="tel" placeholder="请输入号码" /></div>
+						</div>
+					</div>
+
+					<!--选择--->
+					<div class="input-title">选择</div>
+					<div class="wireframe wireframe-input input-select input-select-after">
+						<div class="wireframe-part input-center-bd">
+							<select name="selst1" class="select-center">
+								<option value="1">微信号</option>
+								<option value="2">QQ号</option>
+								<option value="3">Email</option>
+
+							</select>
+						</div>
+						<div class="wireframe-part flex-cont flex-simple">
+							<div class="input-center-hd ">国家/地区</div>
+							<div class="input-center-bd flex-item">
+								<select name="selst1" class="select-center">
+									<option value="1">中国</option>
+									<option value="2">美国</option>
+									<option value="3">英国</option>
+
+								</select>
+							</div>
+
+						</div>
+					</div>
+
+					<label for="inputAgree" class="input-agreee">
+<input type="checkbox" id="inputAgree"  class="input-agree-checkbox"/>
+<span class="input-agree-text"><i>阅读并同意</i><a href="javascripe:;">《相关条款》</a></span>
+</label>
+
+					<div class="wrapper-common">
+						<a href="javascript:;" class="but-common but-primary but-XL-size" onclick="validate()">确定</a>
+					</div>
+				</div>
+				<div class="page-ft">
+					<a href="javascript:home()">
+						<img src="images/icon_footer_link.png" />
+					</a>
+				</div>
+			</div>
+			<script type="text/javascript">
+				var wait = 60;
+
+				function time(o) {
+					if(wait == 0) {
+						o.removeAttribute("disabled");
+						o.value = "获取验证码";
+						wait = 60;
+					} else {
+						o.setAttribute("disabled", true);
+						o.value = "重新发送(" + wait + ")";
+						wait--;
+						setTimeout(function() {
+								time(o)
+							},
+							1000)
+					}
+				}
+				//文本域
+				function changeLength() {
+					var txtlength = $('.input-textarea').val().length;
+					var str = parseInt(200 - txtlength)
+					if(str > -1) {
+						/*console.log(str);*/
+						$('.tatal-num').html(str);
+						$('.current-num').html(txtlength);
+
+					} else {
+						$('.input-textarea').val($('.input-textarea').val().substring(0, 200));
+					}
+				}
+
+				/**js生成验证码**/
+				var code; //在全局定义验证码   
+				//产生验证码  
+				window.onload = createCode();
+
+				function showCheck(a) { /* 显示验证码图片 */
+					var c = document.getElementById("myCanvas");
+					var ctx = c.getContext("2d");
+					ctx.clearRect(0, 0, 1000, 1000);
+					ctx.fillStyle = "white";
+					ctx.font = "80px Arial";
+					ctx.fillText(a, 0, 100);
+
+				}
+
+				function createCode() {
+					code = "";
+					var codeLength = 4; //验证码的长度  
+					var random = new Array(1, 2, 3, 4, 5, 6, 7, 8, 9, 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'); //随机数
+					for(var i = 0; i < codeLength; i++) { //循环操作  
+						var index = Math.floor(Math.random() * 60); //取得随机数的索引（0~61）  
+						code += random[index]; //根据索引取得随机数加到code上  
+					}
+					if(code.length != codeLength) {
+						createCode();
+					}
+					showCheck(code);
+				}
+				//校验验证码  
+				function validate() {
+					var inputCode = document.getElementById("input_codetext").value.toUpperCase(); //取得输入的验证码并转化为大写
+					var codeToUp = code.toUpperCase();
+					if(inputCode.length <= 0) { //若输入的验证码长度为0  
+						document.getElementById("input_codetext").setAttribute("placeholder", "请输入验证码");
+						alert("请输入验证码");
+						createCode();
+						return false;
+					} else if(inputCode != codeToUp) { //若输入的验证码与产生的验证码不一致时  
+						alert("验证码输入错误");
+						document.getElementById("input_codetext").value = " ";
+						document.getElementById("input_codetext").setAttribute("placeholder", "Error");
+						createCode();
+						return false;
+
+					} else { //输入正确时  
+						alert("^-^"); //弹出^-^  
+					}
+				}
+			</script>
+
+		</script>
+		<script type="text/html" id="tpl-list">
+			<div class="page list">
+				<div class="page-hd">
+					<h2>List</h2>
+					<p>列表</p>
+				</div>
+				<div class="page-bd">
+
+					<!-----带说明的列表项---->
+					<div class="list-sm">带说明的列表项</div>
+					<div class="wireframe wireframe-list">
+						<div class="wireframe-part flex-cont  flex-simple">
+							<p class="list-center-bd flex-item">标题文字</p>
+							<span class="list-center-ft">说明文字</span>
+						</div>
+					</div>
+
+					<!----带图标、说明的列表项----->
+					<div class="list-sm">带图标、说明的列表项</div>
+					<div class="wireframe wireframe-list ">
+						<div class="wireframe-part flex-cont  flex-simple">
+							<div class="list-center-hd"><img src="images/icon1.png" /></div>
+							<p class="list-center-bd flex-item">标题文字</p>
+							<span class="list-center-ft">说明文字</span>
+						</div>
+						<div class="wireframe-part flex-cont  flex-simple">
+							<div class="list-center-hd"><img src="images/icon1.png" /></div>
+							<p class="list-center-bd flex-item">标题文字</p>
+							<span class="list-center-ft">说明文字</span>
+						</div>
+					</div>
+
+					<!----带跳转的列表项----->
+					<div class="list-sm">带跳转的列表项</div>
+					<div class="wireframe wireframe-list ">
+						<a href="javascript:;" class="wireframe-part  list-link flex-cont  flex-simple">
+							<p class="list-center-bd flex-item">跳转标题文字</p>
+							<span class="list-center-ft"></span>
+						</a>
+						<a href="javascript:;" class="wireframe-part  list-link flex-cont  flex-simple">
+							<p class="list-center-bd flex-item">跳转标题文字</p>
+							<span class="list-center-ft"></span>
+						</a>
+					</div>
+					<!-----带说明、跳转的列表项---->
+					<div class="list-sm">带说明、跳转的列表项</div>
+					<div class="wireframe wireframe-list ">
+						<a href="javascript:;" class="wireframe-part list-link flex-cont  flex-simple">
+							<p class="list-center-bd flex-item">跳转标题文字</p>
+							<span class="list-center-ft">说明文字</span>
+						</a>
+						<a href="javascript:;" class="wireframe-part list-link flex-cont  flex-simple">
+							<p class="list-center-bd flex-item">跳转标题文字</p>
+							<span class="list-center-ft">说明文字</span>
+						</a>
+					</div>
+					<!--------->
+					<div class="list-sm">带图标明、跳转的列表项</div>
+					<div class="wireframe wireframe-list ">
+						<a href="javascript:;" class="wireframe-part list-link flex-cont  flex-simple">
+							<div class="list-center-hd"><img src="images/icon1.png" /></div>
+							<p class="list-center-bd flex-item">跳转标题文字</p>
+							<span class="list-center-ft">说明文字</span>
+						</a>
+						<a href="javascript:;" class="wireframe-part list-link flex-cont  flex-simple">
+							<div class="list-center-hd"><img src="images/icon1.png" /></div>
+							<p class="list-center-bd flex-item">跳转标题文字</p>
+							<span class="list-center-ft">说明文字</span>
+						</a>
+					</div>
+
+					<!-----新增input列表1---->
+					<div class="list-sm">新增input列表1</div>
+					<div class="wireframe wireframe-list">
+						<div class="wireframe-part flex-cont  flex-simple">
+							<p class="list-center-bd flex-item">标题文字</p>
+							<a href="javascript:;" class="list-center-ft"><i class="iconfont icon-tishi  icon-small"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="page-ft">
+					<a href="javascript:home()">
+						<img src="images/icon_footer_link.png" />
+					</a>
+				</div>
+
+			</div>
+
+		</script>
+		<script type="text/html" id="tpl-uploader">
+			<div class="page uploader">
+				<div class="page-hd">
+					<h2>Uploader</h2>
+					<p>上传组件，一般配合组件Gallery来使用</p>
+				</div>
+				<div class="page-bd ">
+					<div class="gallery-center" id="gallery">
+						<span class="gallery-img" id="galleryImg"></span>
+						<div class="gallery-opr">
+							<a href="javascript:;" class="gallery-del">
+								<i class="iconfont icon-lajitongcu"></i>
+							</a>
+						</div>
+					</div>
+					<div class="wireframe">
+						<div class="uploader-center">
+							<div class="uploader-hd flex-cont flex-simple ">
+								<p class="uploader-title flex-item">图片上传</p>
+								<div class="uploader-info">0/2</div>
+							</div>
+							<div class="uploader-bd">
+								<ul class="uploader-files" id="uploaderFiles">
+									<li class="uploader-file" style="background-image: url(images/1.jpg);"></li>
+									<li class="uploader-file" style="background-image: url(images/2.jpg);"></li>
+									<li class="uploader-file" style="background-image: url(images/3.jpg);"></li>
+									<li class="uploader-file upload-file-status" style="background-image: url(images/4.jpg);">
+										<div class="uploader-file-content">
+											<i class="iconfont icon-jinggao "></i>
+										</div>
+									</li>
+									<li class="uploader-file upload-file-status" style="background-image: url(images/pic_160.png);">
+										<div class="uploader-file-content">
+											50%
+										</div>
+									</li>
+								</ul>
+								<div class="uploader-input-box">
+									<input id="uploaderInput" class="uploader-input" type="file" accept="image/*" multiple>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="page-ft">
+					<a href="javascript:home()">
+						<img src="images/icon_footer_link.png" />
+					</a>
+				</div>
+
+			</div>
+			</div>
+
+			<script class="uploader">
+				$(function() {
+					var tmpl = '<li class="uploader-file" style="background-image:url(#url#)"></li>',
+						$gallery = $("#gallery"),
+						$galleryImg = $("#galleryImg"),
+						$uploaderInput = $("#uploaderInput"),
+						$uploaderFiles = $("#uploaderFiles");
+
+					$uploaderInput.on("change", function(e) {
+						var src, url = window.URL || window.webkitURL || window.mozURL,
+							files = e.target.files;
+						for(var i = 0, len = files.length; i < len; ++i) {
+							var file = files[i];
+
+							if(url) {
+								src = url.createObjectURL(file);
+							} else {
+								src = e.target.result;
+							}
+
+							$uploaderFiles.append($(tmpl.replace('#url#', src)));
+						}
+					});
+
+					$uploaderFiles.on("click", "li", function() {
+						$galleryImg.attr("style", this.getAttribute("style"));
+						$gallery.fadeIn(100);
+					});
+					$gallery.on("click", function() {
+						$gallery.fadeOut(100);
+					});
+				});
+			</script>
+		</script>
+
+		<script type="text/html" id="tpl-article">
+			<div class="page article">
+				<div class="page-hd">
+					<h2>Article</h2>
+					<p>文章</p>
+				</div>
+				<div class="page-bd page-bd-spacing">
+					<article class="article-center">
+						<h1 class="title-big">大标题</h1>
+						<section>
+							<h2 class="title-middle">章标题</h2>
+							<section>
+								<h3 class="title-small">1.1节标题</h3>
+								<p>
+
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+								</p>
+								<p>
+									<img src="images/pic_article.png" />
+									<img src="images/pic_article.png" />
+								</p>
+							</section>
+							<section>
+								<h3 class="title-small">1.2节标题</h3>
+								<p>
+
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+								</p>
+							</section>
+						</section>
+
+					</article>
+				</div>
+				<div class="page-ft">
+					<a href="javascript:home()">
+						<img src="images/icon_footer_link.png" />
+					</a>
+				</div>
+
+			</div>
+
+		</script>
+		<script type="text/html" id="tpl-flex">
+			<div class="page flex">
+				<div class="page-hd ">
+					<h2>Flex</h2>
+					<p>Flex布局</p>
+				</div>
+				<div class="page-bd page-bd-spacing">
+					<!--1个-->
+					<div class="flex-cont">
+						<div class="flex-item flex-bg">weui</div>
+					</div>
+					<!--2个-->
+					<div class="flex-cont">
+						<div class="flex-item flex-bg">weui</div>
+						<div class="flex-item flex-bg">weui</div>
+					</div>
+					<!--3个-->
+					<div class="flex-cont">
+						<div class="flex-item flex-bg">weui</div>
+						<div class="flex-item flex-bg">weui</div>
+						<div class="flex-item flex-bg">weui</div>
+					</div>
+					<!--4个-->
+					<div class="flex-cont">
+						<div class="flex-item flex-bg">weui</div>
+						<div class="flex-item flex-bg">weui</div>
+						<div class="flex-item flex-bg">weui</div>
+						<div class="flex-item flex-bg">weui</div>
+					</div>
+
+				</div>
+				<div class="page-ft">
+					<a href="javascript:home()">
+						<img src="images/icon_footer_link.png" />
+					</a>
+				</div>
+
+			</div>
+
+		</script>
+		<script type="text/html" id="tpl-footer">
+			<div class="page footer">
+				<div class="page-hd">
+					<h2>Footer</h2>
+					<p>页脚</p>
+				</div>
+				<div class="page-bd page-bd-spacing">
+					<div class="footer-center">
+						<p class="footer-text">Copyright © 2008-2016 weui.io</p>
+					</div>
+					<br><br><br>
+					<div class="footer-center">
+						<a class="footer-link" href="javascript:;">底部链接</a>
+						<p class="footer-text">Copyright © 2008-2016 weui.io</p>
+					</div>
+					<br><br><br>
+					<div class="footer-center">
+						<a class="footer-link" href="javascript:;">底部链接</a>
+						<a class="footer-link" href="javascript:;">底部链接</a>
+						<p class="footer-text">Copyright © 2008-2016 weui.io</p>
+					</div>
+
+					<div class="footer-center footer-fixed">
+						<a class="footer-link" href="javascript:;">回到首页</a>
+
+						<p class="footer-text">Copyright © 2008-2016 weui.io</p>
+					</div>
+
+				</div>
+				<div class="page-ft">
+					<a href="javascript:home()">
+						<img src="images/icon_footer_link.png" />
+					</a>
+				</div>
+
+			</div>
+
+		</script>
+		<script type="text/html" id="tpl-gallery">
+			<div class="page gallery">
+				<div class="page-hd">
+					<h2>Gallery</h2>
+					<p>画廊，可实现上传图片的展示或幻灯片播放</p>
+				</div>
+				<div class="gallery-center" style="display: block;">
+					<span class="gallery-img" style="background-image:url(images/pic_article.png) ;"></span>
+					<div class="gallery-opr">
+						<a href="javascript:;" class="gallery-del">
+							<i class="iconfont icon-lajitongcu"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+
+		</script>
+		<script type="text/html" id="tpl-grid">
+			<div class="page grid">
+				<div class="page-hd">
+					<h2>Grid</h2>
+					<p>九宫格</p>
+				</div>
+				<div class="page-bd">
+					<div class="grid">
+						<ul class="flex-cont flex-tab">
+							<li>
+								<a href="javascript:;">
+									<img src="images/icon_tabbar.png" />
+									<p>Grid</p>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<img src="images/icon_tabbar.png" />
+									<p>Grid</p>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<img src="images/icon_tabbar.png" />
+									<p>Grid</p>
+								</a>
+							</li>
+
+						</ul>
+						<ul class="flex-cont flex-tab">
+							<li>
+								<a href="javascript:;">
+									<img src="images/icon_tabbar.png" />
+									<p>Grid</p>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<img src="images/icon_tabbar.png" />
+									<p>Grid</p>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<img src="images/icon_tabbar.png" />
+									<p>Grid</p>
+								</a>
+							</li>
+
+						</ul>
+						<ul class="flex-cont flex-tab">
+							<li>
+								<a href="javascript:;">
+									<img src="images/icon_tabbar.png" />
+									<p>Grid</p>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<img src="images/icon_tabbar.png" />
+									<p>Grid</p>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<img src="images/icon_tabbar.png" />
+									<p>Grid</p>
+								</a>
+							</li>
+
+						</ul>
+					</div>
+
+				</div>
+				<div class="page-ft">
+					<a href="javascript:home()">
+						<img src="images/icon_footer_link.png" />
+					</a>
+				</div>
+
+			</div>
+
+		</script>
+		<script type="text/html" id="tpl-icons">
+			<div class="page icon">
+				<div class="page-hd">
+					<h2>Icon</h2>
+					<p>图标</p>
+				</div>
+				<div class="page-bd page-bd-spacing">
+					<div class="icon-box flex-cont flex-simple">
+						<i class="iconfont icon-chenggong icon-big"></i>
+						<div class="icon-box-js flex-item">
+							<h3>成功</h3>
+							<p class="icon-box-desc">用于表示操作顺利达成</p>
+						</div>
+					</div>
+
+					<div class="icon-box flex-cont flex-simple">
+						<i class="iconfont icon-tishihei icon-big"></i>
+						<div class="icon-box-js flex-item">
+							<h3>提示</h3>
+							<p class="icon-box-desc">用于表示信息提示；也常用于缺乏条件的操作拦截，提示用户所需信息</p>
+						</div>
+					</div>
+
+					<div class="icon-box flex-cont flex-simple">
+						<i class="iconfont icon-jinggao icon-big"></i>
+						<div class="icon-box-js flex-item">
+							<h3>普通警告</h3>
+							<p class="icon-box-desc">用于表示操作后将引起一定后果的情况</p>
+						</div>
+					</div>
+
+					<div class="icon-box flex-cont flex-simple">
+						<i class="iconfont icon-jinggao icon-big strong"></i>
+						<div class="icon-box-js flex-item">
+							<h3>强烈警告</h3>
+							<p class="icon-box-desc">用于表示操作后将引起严重的不可挽回的后果</p>
+						</div>
+					</div>
+
+					<div class="icon-box flex-cont flex-simple">
+						<i class="iconfont icon-dengdai icon-big"></i>
+						<div class="icon-box-js flex-item">
+							<h3>等待</h3>
+							<p class="icon-box-desc">用于表示等待</p>
+						</div>
+					</div>
+
+					<div>
+
+						<i class="iconfont icon-chenggong icon-small"></i>
+						<i class="iconfont icon-chenggonggou icon-small"></i>
+						<i class="iconfont icon-yuanquan icon-small"></i>
+						<i class="iconfont icon-jinggao icon-small strong"></i>
+						<i class="iconfont icon-xiazai icon-small"></i>
+						<i class="iconfont icon-tishihei  spec icon-small"></i>
+						<i class="iconfont icon-guanbi icon-small"></i>
+						<i class="iconfont icon-sousuo icon-small"></i>
+					</div>
+
+				</div>
+				<div class="page-ft">
+					<a href="javascript:home()">
+						<img src="images/icon_footer_link.png" />
+					</a>
+				</div>
+			</div>
+
+		</script>
+		<script type="text/html" id="tpl-loadmore">
+			<div class="page loadmaore">
+				<div class="page-hd">
+					<h2>Loadmore</h2>
+					<p>加载更多</p>
+				</div>
+				<div class="page-bd page-bd-spacing">
+					<div class="loadmore">
+						<i class="iconfont icon-loading loading-animate"></i>
+						<span class="loading-tips">正在加载</span>
+					</div>
+
+					<div class="loadmore loadmore-line">
+						<span class="loading-tips">暂无数据</span>
+					</div>
+
+					<div class="loadmore loadmore-line loadmore-sl">
+						<span class="loading-tips"><i></i></span>
+					</div>
+
+				</div>
+				<div class="page-ft">
+					<a href="javascript:home()">
+						<img src="images/icon_footer_link.png" />
+					</a>
+				</div>
+			</div>
+
+		</script>
+		<script type="text/html" id="tpl-panel">
+			<div class="page panel">
+				<div class="page-hd">
+					<h2>Panel</h2>
+					<p>面板</p>
+				</div>
+				<div class="page-bd">
+					<!---图文组合列表-->
+					<div class="wireframe wireframe-panel">
+						<div class="panel-title">图文组合列表1</div>
+						<div class="wireframe-part ">
+							<a href="javascript:;" class="flex-cont flex-simple">
+								<div class="panel-hd"><img src="images/panel.png" /></div>
+								<div class="panel-bd flex-item">
+									<h2 class="panel-bd-title">标题一</h2>
+									<p class="panel-bd-tips">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</p>
+								</div>
+							</a>
+						</div>
+						<div class="wireframe-part">
+							<a href="javascript:;" class="flex-cont flex-simple">
+								<div class="panel-hd"><img src="images/panel.png" /></div>
+								<div class="panel-bd flex-item">
+									<h2 class="panel-bd-title">标题二</h2>
+									<p class="panel-bd-tips">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</p>
+								</div>
+							</a>
+						</div>
+						<div class="wireframe-link">
+							<a href="javascript:;">
+								<p class="panel-link-look">查看更多</p>
+								<span class="panel-link-ft"></span>
+							</a>
+						</div>
+					</div>
+					<!---文字组合列表1-->
+					<div class="wireframe wireframe-panel panel-part-text">
+						<div class="panel-title">文字组合列表</div>
+						<div class=" wireframe-part ">
+							<a href="javascript:;" class="flex-cont flex-simple">
+
+								<div class="panel-bd flex-item">
+									<h2 class="panel-bd-title">标题一</h2>
+									<p class="panel-bd-tips">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</p>
+								</div>
+							</a>
+						</div>
+						<div class=" wireframe-part ">
+							<a href="javascript:;" class="flex-cont flex-simple">
+
+								<div class="panel-bd flex-item">
+									<h2 class="panel-bd-title">标题二</h2>
+									<p class="panel-bd-tips">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</p>
+								</div>
+							</a>
+						</div>
+
+						<div class="wireframe-link">
+							<a href="javascript:;">
+								<p class="panel-link-look">查看更多</p>
+								<span class="panel-link-ft"></span>
+							</a>
+						</div>
+					</div>
+					<!---小图文列表-->
+					<div class="wireframe wireframe-panel panel-part-small">
+						<div class="panel-title">小图文列表</div>
+						<div class="wireframe-part">
+							<a href="javascript:;" class="flex-cont flex-simple">
+								<div class="panel-small-hd "><img src="images/icon1.png" /></div>
+								<p class="panel-small-bd flex-item">文字标题</p>
+								<span class="panel-link-ft"></span>
+							</a>
+						</div>
+						<div class="wireframe-part ">
+							<a href="javascript:;" class="flex-cont flex-simple">
+								<div class="panel-small-hd "><img src="images/icon1.png" /></div>
+								<p class="panel-small-bd flex-item">文字标题</p>
+								<span class="panel-link-ft"></span>
+							</a>
+						</div>
+					</div>
+					<!---文字列表附来源-->
+					<div class="wireframe wireframe-panel pannel-part-list">
+						<div class="panel-title">文字列表附来源</div>
+						<div class="wireframe-part pannel-center-list">
+							<h2 class="panel-bd-title">标题一</h2>
+							<p class="panel-bd-tips">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</p>
+							<div class="panel-ms">
+								<p class="panel-ms-come">文字来源</p>
+								<p class="panel-ms-time">时间</p>
+								<p class="panel-ms-others">其它信息</p>
+							</div>
+						</div>
+					</div>
+					<!---新增加组合列表1-->
+					<div class="wireframe wireframe-panel pannel-part-list">
+						<div class="panel-title">新增图文组合列表2</div>
+						<div class="wireframe-part">
+							<a href="javascript:;">
+								<div class="flex-cont flex-simple">
+									<div class="panel-hd"><img src="images/panel.png"></div>
+									<div class="panel-bd flex-item">
+										<h2 class="panel-bd-title">标题一</h2>
+										<p class="panel-bd-describe">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</p>
+										<p class="panel-money">¥ 000.00</p>
+									</div>
+								</div>
+								<div class="flex-cont flex-simple">
+									<div class="flex-item pannel-bd-text">预设金额<i class="panel-money">¥ 000.00</i></div>
+									<button class="but-common but-L-size but-orange2 but-L-primary">按钮</button>
+								</div>
+							</a>
+						</div>
+						<div class="wireframe-part">
+							<a href="javascript:;">
+								<div class="flex-cont flex-simple">
+									<div class="panel-hd"><img src="images/panel.png"></div>
+									<div class="panel-bd flex-item">
+										<h2 class="panel-bd-title">标题一</h2>
+										<p class="panel-bd-describe">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</p>
+										<p class="panel-money">¥ 000.00</p>
+									</div>
+								</div>
+								<div class="flex-cont flex-simple">
+									<div class="flex-item pannel-bd-text">预设金额<i class="panel-money">¥ 000.00</i></div>
+									<button class="but-common but-L-size but-orange2 but-L-primary">按钮</button>
+								</div>
+							</a>
+						</div>
+					</div>
+					<!--新增加组合列表2-->
+					<div class="wireframe wireframe-panel pannel-part-list">
+						<div class="panel-title">新增组合列表2</div>
+						<div class="wireframe-part">
+							<div class="pannel-list flex-cont flex-simple">
+								<label class="pannel-list-title">推荐人</label>
+								<div class="pannel-list-text flex-item">18917500000</div>
+							</div>
+							<div class="pannel-list flex-cont flex-simple">
+								<label class="pannel-list-title">订单编号</label>
+								<div class="pannel-list-text flex-item">100000000000</div>
+							</div>
+							<div class="pannel-list flex-cont flex-simple">
+								<label class="pannel-list-title">下单时间</label>
+								<div class="pannel-list-text flex-item">2016-05-04 12:53</div>
+							</div>
+							<div class="pannel-list flex-cont flex-simple">
+								<label class="pannel-list-title">订单状态</label>
+								<div class="pannel-list-text flex-item">已付款，未确认发货</div>
+							</div>
+							<div class="pannel-list flex-cont flex-simple">
+								<label class="pannel-list-title">实付款</label>
+								<div class="pannel-list-text flex-item">¥00.00</div>
+								<button class="but-common but-L-size but-orange2 but-L-primary">按钮</button>
+
+							</div>
+						</div>
+						<div class="wireframe-part">
+							<div class="pannel-list flex-cont flex-simple">
+								<label class="pannel-list-title">推荐人</label>
+								<div class="pannel-list-text flex-item">18917500000</div>
+							</div>
+							<div class="pannel-list flex-cont flex-simple">
+								<label class="pannel-list-title">订单编号</label>
+								<div class="pannel-list-text flex-item">100000000000</div>
+							</div>
+							<div class="pannel-list flex-cont flex-simple">
+								<label class="pannel-list-title">下单时间</label>
+								<div class="pannel-list-text flex-item">2016-05-04 12:53</div>
+							</div>
+							<div class="pannel-list flex-cont flex-simple">
+								<label class="pannel-list-title">订单状态</label>
+								<div class="pannel-list-text flex-item">已付款，未确认发货</div>
+							</div>
+							<div class="pannel-list flex-cont flex-simple">
+								<label class="pannel-list-title">实付款</label>
+								<div class="pannel-list-text flex-item">¥00.00</div>
+								<button class="but-common but-L-size but-orange2 but-L-primary">按钮</button>
+
+							</div>
+						</div>
+
+					</div>
+
+					<!--新增pannel3-->
+					<div class="wireframe wireframe-panel pannel-block">
+						<h3>数据标题</h3>
+						<h2>0000.00</h2>
+						<p class="pannel-block-text">附属数据（单位）<i>0000.00</i></p>
+					</div>
+					<!--新增pannel4-->
+					<div class="wireframe wireframe-panel pannel-block">
+						<div class="wireframe-part">
+							<a href="javascript:;" class="but-common but-primary but-XL-size">页面主要操作Normal</a>
+
+						</div>
+						<p class="pannel-block-text">000-00000000 解释说明</i>
+						</p>
+					</div>
+					<!--新增pannel5-->
+					<div class="wireframe wireframe-panel pannel-block">
+						<div class="wireframe-part">
+							<a href="javascript:;" class="but-common but-primary but-XL-size">页面主要操作Normal</a>
+
+						</div>
+
+					</div>
+					<!--新增pannel6-->
+					<div class="wireframe wireframe-panel pannel-part-list">
+						<div class="wireframe-part">
+							<div class="flex-cont flex-simple pannel-domain hd">
+								<div class="flex-item">预设内容</div>
+								<p>+/-0000.00</p>
+							</div>
+							<div class="flex-cont flex-simple pannel-domain">
+								<div class="flex-item">注释/日期</div>
+								<p>0000.00</p>
+							</div>
+
+						</div>
+
+					</div>
+
+					<!--新增pannel7-->
+					<div class="wireframe wireframe-panel pannel-part-list">
+						<div class="wireframe-part">
+							<div class="flex-cont flex-simple pannel-domain hd">
+								<div class="flex-item">未确认的推荐奖励</div>
+								<p>314.15</p>
+							</div>
+							<div class="flex-cont flex-simple pannel-domain">
+								<div class="flex-item">顾客已付款，但还未确认收货</div>
+
+							</div>
+
+						</div>
+						<div class="wireframe-part">
+							<div class="flex-cont flex-simple pannel-domain hd">
+								<div class="flex-item">预设内容</div>
+								<p>0000.00</p>
+							</div>
+							<div class="flex-cont flex-simple pannel-domain">
+								<div class="flex-item">注释</div>
+
+							</div>
+
+						</div>
+					</div>
+
+					<!---新增pannel8---->
+					<div class="pannel-tab">
+						<ul class="flex-teamlist header">
+							<li class="level">层级</li>
+							<li class="tjr">推荐人</li>
+
+							<li class="jrsj">加入时间</li>
+						</ul>
+						<div class="pannel-tab-cent ">
+							<ul class=" flex-teamlist">
+								<li class="level "><span class="level3">3级</span></li>
+								<li class="tjr">150****7777</li>
+
+								<li class="jrsj"> 2016-09-22 </li>
+							</ul>
+							<ul class="flex-teamlist">
+								<li class="level "><span class="level2">2级</span></li>
+								<li class="tjr">135****5623</li>
+
+								<li class="jrsj">2016-7-25</li>
+							</ul>
+							<ul class="flex-teamlist">
+								<li class="level "><span class="level2">2级</span></li>
+								<li class="tjr">135****5623</li>
+
+								<li class="jrsj">2016-7-25</li>
+							</ul>
+							<ul class="flex-teamlist">
+								<li class="level "><span class="level2">2级</span></li>
+								<li class="tjr">135****5623</li>
+
+								<li class="jrsj">2016-7-25</li>
+							</ul>
+
+						</div>
+						<div class="empty_data hidden">暂无数据</div>
+					</div>
+				</div>
+				<div class="page-ft">
+					<a href="javascript:home()">
+						<img src="images/icon_footer_link.png" />
+					</a>
+				</div>
+
+			</div>
+
+		</script>
+		<script type="text/html" id="tpl-preview">
+			<div class="page preview">
+				<div class="page-hd">
+					<h2>Preview</h2>
+					<p>表单预览</p>
+				</div>
+				<div class="page-bd">
+					<div class="wireframe wireframe-preview">
+						<div class="wireframe-preview-hd flex-cont flex-simple">
+							<label class="wireframe-preview-label flex-item">付款金额</label>
+							<p class=" wireframe-preview-value">¥2400.00</p>
+						</div>
+						<div class="wireframe-preview-bd">
+							<div class="wireframe-preview-item flex-cont flex-simple">
+								<label class="wireframe-preview-label ">商品</label>
+								<p class="wireframe-preview-text flex-item">电动打蛋机</p>
+							</div>
+							<div class="wireframe-preview-item flex-cont flex-simple">
+								<label class="wireframe-preview-label ">标题标题</label>
+								<p class="wireframe-preview-text flex-item">名字名字名字</p>
+							</div>
+							<div class="wireframe-preview-item flex-cont flex-simple">
+								<label class="wireframe-preview-label ">标题标题</label>
+								<p class="wireframe-preview-text flex-item">很长很长的名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字</p>
+							</div>
+						</div>
+						<div class="wireframe-preview-ft ">
+							<a href="javascript:;" class="wireframe-preview-but">操作</a>
+						</div>
+					</div>
+
+					<div class="wireframe wireframe-preview">
+						<div class="wireframe-preview-hd flex-cont flex-simple">
+							<label class="wireframe-preview-label flex-item">付款金额</label>
+							<p class=" wireframe-preview-value">¥2400.00</p>
+						</div>
+						<div class="wireframe-preview-bd">
+							<div class="wireframe-preview-item flex-cont flex-simple">
+								<label class="wireframe-preview-label ">商品</label>
+								<p class="wireframe-preview-text flex-item">电动打蛋机</p>
+							</div>
+							<div class="wireframe-preview-item flex-cont flex-simple">
+								<label class="wireframe-preview-label ">标题标题</label>
+								<p class="wireframe-preview-text flex-item">名字名字名字</p>
+							</div>
+							<div class="wireframe-preview-item flex-cont flex-simple">
+								<label class="wireframe-preview-label ">标题标题</label>
+								<p class="wireframe-preview-text flex-item">很长很长的名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字</p>
+							</div>
+						</div>
+						<div class="wireframe-preview-ft  flex-cont flex-tab">
+							<li>
+								<a href="javascript:;" class="wireframe-preview-but wireframe-preview-default ">辅助操作</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="wireframe-preview-but">操作</a>
+							</li>
+						</div>
+					</div>
+				</div>
+				<div class="page-ft">
+					<a href="javascript:home()">
+						<img src="images/icon_footer_link.png" />
+					</a>
+				</div>
+			</div>
+
+		</script>
+		<script type="text/html" id="tpl-progress">
+			<div class="page progress">
+				<div class="page-hd">
+					<h2>Progress</h2>
+					<p>进度条</p>
+				</div>
+				<div class="page-bd page-bd-spacing">
+					<div class="progress-center flex-cont flex-simple">
+						<div class="progress-bar flex-item">
+							<div class="progress-inner-bar js-progress" style="width: 0%;"></div>
+
+						</div>
+						<a href="javascript:;" class="progress-opr">
+							<i class="iconfont icon-svg26"></i>
+						</a>
+					</div>
+					<div class="progress-center flex-cont flex-simple">
+						<div class="progress-bar flex-item">
+							<div class="progress-inner-bar js-progress" style="width: 50%;"></div>
+
+						</div>
+						<a href="javascript:;" class="progress-opr">
+							<i class="iconfont icon-svg26"></i>
+						</a>
+					</div>
+					<div class="progress-center flex-cont flex-simple">
+						<div class="progress-bar flex-item">
+							<div class="progress-inner-bar js-progress" style="width: 80%;"></div>
+
+						</div>
+						<a href="javascript:;" class="progress-opr">
+							<i class="iconfont icon-svg26"></i>
+						</a>
+					</div>
+					<div class="btn-area">
+						<a href="javascripe:;" class="but-common but-primary but-XL-size" id="btnUpload">上传</a>
+					</div>
+				</div>
+				<div class="page-ft">
+					<a href="javascript:home()">
+						<img src="images/icon_footer_link.png" />
+					</a>
+				</div>
+
+			</div>
+			</div>
+
+			<script>
+				$(function() {
+					var $progress = $('.js-progress'),
+						$butUpload = $('#btnUpload');
+					var progress = 0;
+
+					function next() {
+						if(progress > 100) {
+							progress = 0;
+							$butUpload.removeClass('but-disabled');
+							return; //跳出方法
+						}
+						$progress.css({ width: progress + '%' });
+						progress = ++progress;
+						setTimeout(next, 20);
+					}
+
+					$butUpload.on('click', function() {
+						if($butUpload.hasClass('but-disabled')) return;
+						$butUpload.addClass('but-disabled');
+						next();
+					});
+				});
+			</script>
+
+		</script>
+
+		<script type="text/html" id="tpl-actionsheet">
+			<div class="page actionsheet">
+				<div class="page-hd">
+					<h2>ActionSheet</h2>
+					<p>弹出式菜单</p>
+				</div>
+				<div class="page-bd page-bd-spacing operation">
+					<a href="javascript:;" class="but-common but-default but-XL-size " id="showIOSActionSheet">ios Actionsheet</a>
+					<a href="javascript:;" class="but-common but-default but-XL-size" id="showAndroidActionSheet">Android Actionsheet</a>
+
+				</div>
+				<div class="ios-show-list">
+					<div class="page-mask" id="ios-mask" style="display: none;"></div>
+					<div class="ios-actionsheet" id="iosActionsheet">
+						<div class="ios-actionsheet-menu">
+							<div class="ios-actionsheet-cell">示列菜单</div>
+							<div class="ios-actionsheet-cell">示列菜单</div>
+							<div class="ios-actionsheet-cell">示列菜单</div>
+							<div class="ios-actionsheet-cell">示列菜单</div>
+						</div>
+						<div class="ios-actionsheet-action">
+							<div class="ios-actionsheet-cell" id="iosActionsheetCancel">取消</div>
+						</div>
+					</div>
+				</div>
+				<div class="android-show-list" id="androidActionsheet" style="display: none;">
+					<div class="page-mask"></div>
+					<div class="android-actionsheet">
+						<div class="ios-actionsheet-menu">
+							<div class="ios-actionsheet-cell">示列菜单</div>
+							<div class="ios-actionsheet-cell">示列菜单</div>
+							<div class="ios-actionsheet-cell">示列菜单</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="page-ft">
+					<a href="javascript:home()">
+						<img src="images/icon_footer_link.png" />
+					</a>
+				</div>
+
+			</div>
+			</div>
+
+			<script class="actionsheet">
+				//ios
+				$(function() {
+					var $iosActionsheet = $("#iosActionsheet");
+					var $iosMask = $("#ios-mask");
+
+					function hiddenActonSheet() {
+						$iosActionsheet.removeClass("actionsheet-toggle");
+						$iosMask.fadeOut(200);
+					}
+					$iosMask.on("click", hiddenActonSheet);
+					$("#iosActionsheetCancel").on("click", hiddenActonSheet);
+					$("#showIOSActionSheet").on("click", function() {
+						$iosActionsheet.addClass("actionsheet-toggle");
+						$iosMask.fadeIn(200);
+					});
+				});
+				//android
+				$(function() {
+					var $androidActionsheet = $("#androidActionsheet");
+					var $androidMask = $(".page-mask");
+
+					$("#showAndroidActionSheet").on("click", function() {
+						$androidActionsheet.fadeIn(200);
+						$androidMask.on("click", function() {
+							$androidActionsheet.fadeOut(200);
+						})
+					})
+
+				});
+			</script>
+
+		</script>
+		<script type="text/html" id="tpl-dialog">
+			<div class="page dialog">
+				<div class="page-hd">
+					<h2>Dialog</h2>
+					<p>对话框</p>
+				</div>
+				<div class="page-bd page-bd-spacing operation">
+					<a href="javascript:;" class="but-common but-default but-XL-size " id="showIOSDialog1">ios Dialog样式一</a>
+					<a href="javascript:;" class="but-common but-default but-XL-size " id="showIOSDialog2">ios Dialog样式二</a>
+
+					<a href="javascript:;" class="but-common but-default but-XL-size " id="showAndroidDialog1">Android Dialog样式一</a>
+					<a href="javascript:;" class="but-common but-default but-XL-size " id="showAndroidDialog2">Android Dialog样式二</a>
+				</div>
+				<div class="page-ft">
+					<a href="javascript:home()">
+						<img src="images/icon_footer_link.png" />
+					</a>
+				</div>
+
+			</div>
+			</div>
+
+			<script>
+				/****需要点击按钮才能弹出弹窗******/
+				$('#showIOSDialog1').comPopBox({
+					winId: 'showIOSDialog1',
+					popTitle: '弹窗标题',
+					popContent: '弹窗内容，告知当前状态、信息和解决方法，描述文字尽量控制在三行内',
+					operateBut1: '辅助操作',
+					operateBut2: '主操作',
+					isDefault: true,
+					callback: add1,
+				});
+
+				$('#showIOSDialog2').comPopBox({
+					winId: 'showIOSDialog2',
+					popTitle: ' ',
+					popContent: '弹窗内容，告知当前状态、信息和解决方法，描述文字尽量控制在三行内',
+					operateBut1: ' ',
+					operateBut2: '知道了',
+					isDefault: true,
+					callback: add2,
+				});
+
+				$('#showAndroidDialog1').comPopBox({
+					winId: 'showAndroidDialog1',
+					popTitle: '弹窗标题',
+					popContent: '弹窗内容，告知当前状态、信息和解决方法，描述文字尽量控制在三行内',
+					operateBut1: '辅助操作 ',
+					operateBut2: '主操作',
+					isDefault: true,
+					callback: add3,
+				});
+				$('#showAndroidDialog2').comPopBox({
+					winId: 'showAndroidDialog2',
+					popTitle: ' ',
+					popContent: '弹窗内容，告知当前状态、信息和解决方法，描述文字尽量控制在三行内',
+					operateBut1: '辅助操作 ',
+					operateBut2: '主操作',
+					isDefault: true,
+					callback: add4,
+				});
+
+				function add1() {
+					alert("11111111111");
+				}
+
+				function add2() {
+					alert("22222222222");
+				}
+
+				function add3() {
+					alert("3333333333");
+				}
+
+				function add4() {
+					alert("44444444444444");
+				}
+			</script>
+
+		</script>
+		<script type="text/html" id="tpl-msg">
+			<div class="page msg">
+				<div class="page-hd">
+					<h2>Msg</h2>
+					<p>提示页</p>
+				</div>
+				<div class="page-bd page-bd-spacing ">
+					<a href="#msg-success" class="but-common but-default but-XL-size ">成功提示页</a>
+					<a href="#msg-warn" class="but-common but-default but-XL-size">失败提示页</a>
+				</div>
+				<div class="page-ft">
+					<a href="javascript:home()">
+						<img src="images/icon_footer_link.png" />
+					</a>
+				</div>
+
+			</div>
+
+		</script>
+		<script type="text/html" id="tpl-msg-success">
+			<div class="page msg-success">
+				<div class="msg-center">
+					<div class="msg-icon-area">
+						<i class="iconfont icon-chenggong icon-big"></i>
+					</div>
+					<div class="msg-text-area">
+						<h2 class="msg-title">操作成功</h2>
+						<p class="msg-desc">内容详情，可根据实际需要安排，如果换行则不超过规定长度，居中展现
+							<a href="javascript:;">文字链接</a>
+						</p>
+					</div>
+					<div class="msg-opr-area page-bd-spacing">
+						<a href="javascript:history.back();" class="but-common but-primary but-XL-size">推荐操作</a>
+						<a href="javascript:history.back();" class="but-common but-default but-XL-size">辅助操作</a>
+					</div>
+					<div class="msg-extra-area">
+						<div class="footer-center">
+							<a class="footer-link" href="javascript:;">底部链接</a>
+							<p class="footer-text">Copyright © 2008-2016 weui.io</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</script>
+		<script type="text/html" id="tpl-msg-warn">
+			<div class="page msg-warn">
+				<div class="msg-center">
+					<div class="msg-icon-area">
+						<i class="iconfont icon-jinggao icon-big strong"></i>
+					</div>
+					<div class="msg-text-area">
+						<h2 class="msg-title">操作失败</h2>
+						<p class="msg-desc">内容详情，可根据实际需要安排，如果换行则不超过规定长度，居中展现
+							<a href="javascript:;">文字链接</a>
+						</p>
+					</div>
+					<div class="msg-opr-area page-bd-spacing">
+						<a href="javascript:history.back();" class="but-common but-primary but-XL-size">推荐操作</a>
+						<a href="javascript:history.back();" class="but-common but-default but-XL-size">辅助操作</a>
+					</div>
+					<div class="msg-extra-area">
+						<div class="footer-center">
+							<a class="footer-link" href="javascript:;">底部链接</a>
+							<p class="footer-text">Copyright © 2008-2016 weui.io</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</script>
+
+		<script type="text/html" id="tpl-toast">
+			<div class="page toast">
+				<div class="page-hd">
+					<h2>Toast</h2>
+					<p>弹出式提示</p>
+				</div>
+				<div class="page-bd page-bd-spacing operation">
+					<a href="javascript:;" class="but-common but-default but-XL-size" id="showToast">成功提示</a>
+					<a href="javascript:;" class="but-common but-default but-XL-size" id="showLoadingTost">加载中提示</a>
+				</div>
+				<div class="page-ft">
+					<a href="javascript:home()">
+						<img src="images/icon_footer_link.png" />
+					</a>
+				</div>
+
+				<div id="toast" style="display: none;">
+					<div class="show-toast">
+						<i class="iconfont icon-chenggonggou"></i>
+						<p class="show-toast-content">已完成</p>
+					</div>
+				</div>
+
+				<div id="loadigtoast" style="display: none;">
+					<div class="show-toast">
+						<i class="iconfont icon-loading loading-animate"></i>
+						<p class="show-toast-content">数据加载中</p>
+					</div>
+				</div>
+			</div>
+			</div>
+
+			<script class="toast">
+				$(function() {
+					//toast
+					var $toast = $('#toast');
+					var $loadingToast = $('#loadigtoast');
+					$("#showToast").on("tap", function() {
+						if($toast.css('display') != 'none') return;
+						if($loadingToast.css('display') != 'none') return;
+						fadeout($toast);
+					});
+
+					//loading
+					$("#showLoadingTost").on("tap", function() {
+						if($loadingToast.css('display') != 'none') return;
+						if($toast.css('display') != 'none') return;
+						fadeout($loadingToast);
+					});
+
+					function fadeout(e) {
+						e.fadeIn(100);
+						setTimeout(function() {
+							e.fadeOut(100);
+						}, 2000);
+					}
+				});
+			</script>
+
+		</script>
+		<script type="text/html" id="tpl-navbar">
+			<div class="page navbar">
+				<div class="page-hd">
+					<h2>Navbar</h2>
+					<p>tab导航</p>
+				</div>
+				<div class="page-bd ">
+					<div class="page-tab">
+						<div class="navbar-center flex-cont flex-tab">
+							<li class="tab-item on">选项一</li>
+							<li class="tab-item ">选项二</li>
+							<li class="tab-item ">选项三</li>
+						</div>
+					</div>
+				</div>
+				<div class="page-ft">
+					<a href="javascript:home()">
+						<img src="images/icon_footer_link.png" />
+					</a>
+				</div>
+
+			</div>
+			</div>
+
+			<script>
+				$(function() {
+					$('.tab-item').tabchange();
+				})
+			</script>
+		</script>
+		<script type="text/html" id="tpl-tabbar">
+			<div class="page tabbar">
+				<div class="page-hd">
+					<h2>Tabbar</h2>
+					<p>tab导航</p>
+				</div>
+				<div class="page-bd ">
+					<div class="page-tab">
+						<div class="tabbar-center flex-cont flex-tab">
+							<li class="tab-item on">
+								<a href="javascript:;">
+									<img src="images/icon_tabbar.png" />
+									<p>微信</p>
+								</a>
+							</li>
+
+							<li class="tab-item ">
+								<a href="javascript:;">
+									<img src="images/icon_tabbar.png" />
+									<p>通讯录</p>
+								</a>
+							</li>
+
+							<li class="tab-item">
+								<a href="javascript:;">
+									<img src="images/icon_tabbar.png" />
+									<p>发现</p>
+								</a>
+							</li>
+
+							<li class="tab-item">
+								<a href="javascript:;">
+									<img src="images/icon_tabbar.png" />
+									<p>我</p>
+								</a>
+							</li>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			</div>
+
+			<script>
+				$(function() {
+					$('.tab-item').tabchange();
+				})
+			</script>
+
+		</script>
+		<script type="text/html" id="tpl-searchbar">
+			<div class="page searchbar">
+				<div class="page-hd">
+					<h2>SearchBar</h2>
+					<p>搜索栏</p>
+				</div>
+				<div class="page-bd ">
+					<div class="search-bar   flex-cont flex-simple" id="searchBar">
+						<form class="search-bar-form   flex-item">
+							<div class="search-bar-box ">
+								<i class="iconfont icon-sousuo icon-small"></i>
+								<input type="search" class="search-bar-input" id="searchInput" placeholder="搜索" required="">
+
+								<a href="javascript:;" class="iconfont search-bar-clear" id="searchClear"></a>
+							</div>
+							<label class="search-bar-label" id="searchText">
+				<i class="iconfont icon-sousuo icon-small"></i>
+				<span>搜索</span>
+			</label>
+						</form>
+						<a href="javascript:" class="search-bar-cancelbtn" id="searchCancel">取消</a>
+					</div>
+					<div class="wireframe search-bar-result" id="searchResult">
+						<div class="wireframe-part">
+							<p class="list-center-bd ">实时搜索文本</p>
+						</div>
+						<div class="wireframe-part">
+							<p class="list-center-bd ">实时搜索文本</p>
+						</div>
+						<div class="wireframe-part">
+							<p class="list-center-bd ">实时搜索文本</p>
+						</div>
+						<div class="wireframe-part">
+							<p class="list-center-bd ">实时搜索文本</p>
+						</div>
+					</div>
+
+					<div class="search-part flex-cont flex-simple">
+						<input type="text" placeholder="预设内容" class="search-part-box flex-item" />
+						<a href="javascript:;" class="but-common but-primary but-M-size ">按钮</a>
+					</div>
+					<div class="search-part flex-cont flex-simple">
+						<input type="text" placeholder="预设内容" class="search-part-box flex-item" />
+
+					</div>
+				</div>
+				<div class="page-ft">
+					<a href="javascript:home()">
+						<img src="images/icon_footer_link.png" />
+					</a>
+				</div>
+
+			</div>
+
+			<script>
+				var $searchBar = $('#searchBar'),
+					$searchResult = $('#searchResult'),
+					$searchText = $('#searchText'),
+					$searchClear = $('#searchClear'),
+					$searchInput = $('#searchInput'),
+					$searchCancel = $('#searchCancel');
+
+				function hideSearchResule() {
+					$searchResult.hide();
+					$searchInput.val('');
+				}
+
+				function cancelSearch() {
+					hideSearchResule();
+					$searchBar.removeClass('search-bar-focusing');
+					$searchText.show();
+				}
+
+				$searchText.on("tap", function() {
+					$searchBar.addClass('search-bar-focusing');
+					$searchInput.focus();
+				})
+				$searchInput
+					.on("blur", function() {
+						if(!this.value.length) cancelSearch();
+
+					})
+					.on('input', function() {
+						if(this.value.length) {
+							$searchResult.show();
+							$searchClear.show();
+						} else {
+							$searchResult.hide();
+							$searchClear.hide();
+						}
+					})
+				$searchClear.on('tap', function() {
+					hideSearchResule();
+					$searchInput.focus();
+					$searchClear.hide();
+				})
+				$searchCancel.on('tap', function() {
+					cancelSearch();
+					$searchInput.blur();
+					$searchClear.hide();
+				})
+			</script>
+
+		</script>
+
+		<script src="js/zepto.min.js"></script>
+		<script src="js/base.js"></script>
+		<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script src="js/example.js"></script>
+		<script src="http://count-js.joojtech.com/o_code.js"></script>
+		<script type="text/javascript">
+			countFunction({
+				src: 'http://count.jac-pc.joojtech.com/count.js', //这个是统计的空js地址，可以配置不同环境对的地址
+				//src : 'http://pre-count.jac-pc.joojtech.com/count.js',//这个是统计的空js地址，可以配置不同环境对的地址
+				//src : 'http://test-count.jac-pc.joojtech.com/count.js',//这个是统计的空js地址，可以配置不同环境对的地址
+				mark_1: 'mark_1text', //自定义字段
+				mark_2: 'mark_2text', //自定义字段
+				mark_3: 'mark_3text', //自定义字段
+				mark_4: 'mark_4text', //自定义字段
+				mark_5: 'mark_5text', //自定义字段
+				mark_6: 'mark_6text', //自定义字段
+				mark_7: 'mark_7text', //自定义字段
+				mark_8: 'mark_8text', //自定义字段
+				mark_9: 'mark_9text', //自定义字段
+				mark_10: 'mark_10text' //自定义字段
+			});
+		</script>
+	</body>
+
+</html>

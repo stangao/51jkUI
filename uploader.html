@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" id="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="telephone=no" name="format-detection">
+		<title>Uploader</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/uploader.css" />
+		<script type="text/javascript" src="js/layout.js"></script>
+	</head>
+
+	<body class="bg_color">
+		<div class="contiainer">
+			<div class="page uploader">
+				<div class="page-hd">
+					<h2>Uploader</h2>
+					<p>上传组件，一般配合组件Gallery来使用</p>
+				</div>
+				<div class="page-bd ">
+					<div class="gallery-center" id="gallery">
+						<span class="gallery-img" id="galleryImg"></span>
+						<div class="gallery-opr">
+							<a href="javascript:;" class="gallery-del">
+								<i class="iconfont icon-lajitongcu"></i>
+							</a>
+						</div>
+					</div>
+					<div class="wireframe">
+						<div class="uploader-center">
+							<div class="uploader-hd flex-cont flex-simple ">
+								<p class="uploader-title flex-item">图片上传</p>
+								<div class="uploader-info">0/2</div>
+							</div>
+							<div class="uploader-bd">
+								<ul class="uploader-files" id="uploaderFiles">
+									<li class="uploader-file" style="background-image: url(images/1.jpg);"></li>
+									<li class="uploader-file" style="background-image: url(images/2.jpg);"></li>
+									<li class="uploader-file" style="background-image: url(images/3.jpg);"></li>
+									<li class="uploader-file upload-file-status" style="background-image: url(images/4.jpg);">
+										<div class="uploader-file-content">
+											<i class="iconfont icon-jinggao "></i>
+										</div>
+									</li>
+									<li class="uploader-file upload-file-status" style="background-image: url(images/pic_160.png);">
+										<div class="uploader-file-content">
+											50%
+										</div>
+									</li>
+								</ul>
+								<div class="uploader-input-box">
+									<input id="uploaderInput" class="uploader-input" type="file" accept="image/*" multiple>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="page-ft">
+					<a href="javascript:home()">
+						<img src="images/icon_footer_link.png" />
+					</a>
+				</div>
+
+			</div>
+		</div>
+		<script src="js/zepto.min.js"></script>
+		<script src="js/base.js"></script>
+		<script class="uploader">
+			$(function() {
+				var tmpl = '<li class="uploader-file" style="background-image:url(#url#)"></li>',
+					$gallery = $("#gallery"),
+					$galleryImg = $("#galleryImg"),
+					$uploaderInput = $("#uploaderInput"),
+					$uploaderFiles = $("#uploaderFiles");
+
+				$uploaderInput.on("change", function(e) {
+					var src, url = window.URL || window.webkitURL || window.mozURL,
+						files = e.target.files;
+					for(var i = 0, len = files.length; i < len; ++i) {
+						var file = files[i];
+
+						if(url) {
+							src = url.createObjectURL(file);
+						} else {
+							src = e.target.result;
+						}
+
+						$uploaderFiles.append($(tmpl.replace('#url#', src)));
+					}
+				});
+
+				$uploaderFiles.on("click", "li", function() {
+					$galleryImg.attr("style", this.getAttribute("style"));
+					$gallery.fadeIn(100);
+				});
+				$gallery.on("click", function() {
+					$gallery.fadeOut(100);
+				});
+			});
+		</script>
+	</body>
+
+</html>

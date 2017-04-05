@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" id="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="telephone=no" name="format-detection">
+		<title>搜索栏</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/search.css" />
+		<script type="text/javascript" src="js/layout.js"></script>
+	</head>
+
+	<body>
+		<div class="contiainer">
+			<div class="page searchbar">
+				<div class="page-hd">
+					<h2>SearchBar</h2>
+					<p>搜索栏</p>
+				</div>
+				<div class="page-bd ">
+					<div class="search-bar   flex-cont flex-simple" id="searchBar">
+						<form class="search-bar-form   flex-item">
+							<div class="search-bar-box ">
+								<i class="iconfont icon-sousuo icon-small"></i>
+								<input type="search" class="search-bar-input" id="searchInput" placeholder="搜索" required="">
+
+								<a href="javascript:;" class="iconfont search-bar-clear" id="searchClear"></a>
+							</div>
+							<label class="search-bar-label" id="searchText">
+				<i class="iconfont icon-sousuo icon-small"></i>
+				<span>搜索</span>
+			</label>
+						</form>
+						<a href="javascript:" class="search-bar-cancelbtn" id="searchCancel">取消</a>
+					</div>
+					<div class="wireframe search-bar-result" id="searchResult">
+						<div class="wireframe-part">
+							<p class="list-center-bd ">实时搜索文本</p>
+						</div>
+						<div class="wireframe-part">
+							<p class="list-center-bd ">实时搜索文本</p>
+						</div>
+						<div class="wireframe-part">
+							<p class="list-center-bd ">实时搜索文本</p>
+						</div>
+						<div class="wireframe-part">
+							<p class="list-center-bd ">实时搜索文本</p>
+						</div>
+					</div>
+
+					<div class="search-part flex-cont flex-simple">
+						<input type="text" placeholder="预设内容" class="search-part-box flex-item" />
+						<a href="javascript:;" class="but-common but-primary but-M-size">按钮</a>
+					</div>
+					<div class="search-part flex-cont flex-simple">
+						<input type="text" placeholder="预设内容" class="search-part-box flex-item" />
+
+					</div>
+				</div>
+				<div class="page-ft">
+					<a href="javascript:home()">
+						<img src="images/icon_footer_link.png" />
+					</a>
+				</div>
+
+			</div>
+		</div>
+		<script src="js/zepto.min.js"></script>
+		<script>
+			var $searchBar = $('#searchBar'),
+				$searchResult = $('#searchResult'),
+				$searchText = $('#searchText'),
+				$searchClear = $('#searchClear'),
+				$searchInput = $('#searchInput'),
+				$searchCancel = $('#searchCancel');
+
+			function hideSearchResule() {
+				$searchResult.hide();
+				$searchInput.val('');
+			}
+
+			function cancelSearch() {
+				hideSearchResule();
+				$searchBar.removeClass('search-bar-focusing');
+				$searchText.show();
+			}
+
+			$searchText.on("tap", function() {
+				$searchBar.addClass('search-bar-focusing');
+				$searchInput.focus();
+			})
+			$searchInput
+				.on("blur", function() {
+					if(!this.value.length) cancelSearch();
+
+				})
+				.on('input', function() {
+					if(this.value.length) {
+						$searchResult.show();
+						$searchClear.show();
+					} else {
+						$searchResult.hide();
+						$searchClear.hide();
+					}
+				})
+			$searchClear.on('tap', function() {
+				hideSearchResule();
+				$searchInput.focus();
+				$searchClear.hide();
+			})
+			$searchCancel.on('tap', function() {
+				cancelSearch();
+				$searchInput.blur();
+				$searchClear.hide();
+			})
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* 
+ * Description: skin.css
+ * Author:      gaonaibo,sundan
+ * Version:     1.0.0(update stan 2016-10-25 15:25)
+ * Website:     http://www.51jk.com/
+*/
+/* CSS Reset - Description :Reset skin for difference needs----------- */
+/**按钮*/
+/* 
+ * Description: layout.css
+ * Author:      sundan
+ * Version:     1.0.0(update stan 2016-10-25 15:25)
+ * Website:     http://www.51jk.com/
+*/
+/* CSS Reset - Description :用于demo展示，实际应用时不需要引用----------- */
+.footer-text {
+  font-size: 0.45rem;
+}
+.footer-link {
+  font-size: 0.45rem;
+  color: #586c94;
+  border-left: 1px solid #cccccc;
+  padding-left: 0.2rem;
+  display: inline-block;
+}
+.footer-link:first-child {
+  border-left: none;
+}
+.footer-center p {
+  text-align: center;
+}
+.footer-fixed {
+  position: fixed;
+  bottom: 0.5rem;
+  left: 0;
+  right: 0;
+}

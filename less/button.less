@@ -1,0 +1,144 @@
+@import "colors.less";
+@import "size.less";
+@import "layout.less";
+@import "css3.less";
+.wrapper-but {
+    padding: 0 @per4;
+}
+.button {
+  .but-common{
+    margin-top: @num5;   
+  }  
+}
+.but-common { 
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    .round(3px);  
+    color: @white;
+    outline: none;
+     &.but-default{
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200%;
+        height: 200%;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        .pre(transform,scale(0.5));
+        .pre(transform-origin,0 0);
+        .pre(box-sizing,border-box);
+        .round(3px);
+    }  
+    }
+}
+.but-XL-size {
+    font-size: @text_XL_size;
+    width: @but_XL_size_w;
+    height: @but_XL_size_h;
+    line-height: unit(@but_XL_size_h/@text_XL_size);
+    &:active{
+       color: @but_primary_activefont;
+    }
+}
+.but-L-size {
+    font-size: @text_L_size;
+    width: @but_L_size_w;
+    height: @but_L_size_h;
+    line-height: unit(@but_L_size_h/@text_L_size);
+    .pre(tap-highlight-color,rgba(0, 0, 0, 0));
+    display: inline-block;
+    &:after {
+        border-width: 0;
+    }
+}
+.but-M-size {
+    font-size: @text_L_size;
+    width: @but_M_size_w;
+    height: @but_M_size_h;
+    line-height: unit(@but_M_size_h/@text_L_size);
+    display: inline-block;
+    &:active{
+       color: @but_primary_activefont;
+       
+    }
+}
+
+//buttonXL主要操作
+.but-primary {  
+    .bg(@but_primary,@but_primary3);
+    .boxshadow(1px,1px,2px,@but_primary2);
+    &:not(.but-disabled ):active {
+        .bg(@but_primary2,@but_primary);
+    }  
+    &.but-M-size{
+         .bg(@but_primary,@but_primary);
+         .boxshadow(0px,0px,0px,@but_primary2);
+        &:not(.but-disabled ):active {
+        background-color:@but_primary_activebg;
+        
+    } 
+    }  
+}
+//button次要操作
+.but-default {
+    color: @black;
+    background-color: @but_default;
+    .pre(tap-highlight-color,rgba(0, 0, 0, 0));
+    
+    &:not(.but-disabled):active {
+        color: @but_default_activefont;
+        background-color: @but_default_activebg;
+    }
+}
+.operation{
+    .but-default{
+      &:active{
+    color: @black;
+    background-color: @but_default;
+      }  
+    }
+}
+//buttonXL警告操作
+.but-warn {
+    .bg(@but_warn,@but_warn3);
+    .boxshadow(1px,1px,2px,@but_warn2);
+    &:not(.but-disabled ):active {
+        .bg(@but_warn2,@but_warn);
+    }   
+     &.but-M-size{
+        .bg(@but_warn,@but_warn);
+        .boxshadow(0px,0px,0px,@but_warn2);
+        &:not(.but-disabled ):active {
+        background-color: @but_warn_activebg;
+        
+    } 
+    } 
+}
+//L线框按钮
+.but-L-primary {
+    color: @but_primary;
+    border: 1px solid @but_primary;
+    &:active {
+        color: @but_L_primary_activefont;
+        border-color: @but_L_primary_activefont;
+    }
+}
+
+.but-disabled {
+    color: @but_primary_activefont;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); //当用户点击iOS的Safari浏览器中的链接或JavaScript的可点击的元素时，覆盖显示的高亮颜色
+    &.but-primary {
+        background-color: @but_primary_disabledbg;
+        color: @but_primary_disabledfont;
+    } 
+     &.but-default {
+        background-color: @but_default_disabledbg;
+        color: @but_default_disabledfont;
+    }   
+    &.but-warn {
+        background-color: @but_warn_disabledbg;
+        color: @but_warn_disabledfont;
+    }    
+}

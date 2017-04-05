@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" id="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="telephone=no" name="format-detection">
+		<title>弹出式提示</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/toast.css" />
+		<script type="text/javascript" src="js/layout.js"></script>
+	</head>
+
+	<body>
+		<div class="contiainer">
+			<div class="page toast">
+				<div class="page-hd">
+					<h2>Toast</h2>
+					<p>弹出式提示</p>
+				</div>
+				<div class="page-bd page-bd-spacing operation">
+					<a href="javascript:;" class="but-common but-default but-XL-size" id="showToast">成功提示</a>
+					<a href="javascript:;" class="but-common but-default but-XL-size" id="showLoadingTost">加载中提示</a>
+				</div>
+				<div class="page-ft">
+					<a href="javascript:home()">
+						<img src="images/icon_footer_link.png" />
+					</a>
+				</div>
+
+				<div id="toast" style="display: none;">
+					<div class="show-toast">
+						<i class="iconfont icon-chenggonggou"></i>
+						<p class="show-toast-content">已完成</p>
+					</div>
+				</div>
+
+				<div id="loadigtoast" style="display: none;">
+					<div class="show-toast">
+						<i class="iconfont icon-loading loading-animate"></i>
+						<p class="show-toast-content">数据加载中</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/zepto.min.js"></script>
+		<script class="toast">
+			$(function() {
+				//toast
+				var $toast = $('#toast');
+				var $loadingToast = $('#loadigtoast');
+				$("#showToast").on("tap", function() {
+					if($toast.css('display') != 'none') return;
+					if($loadingToast.css('display') != 'none') return;
+					fadeout($toast);
+				});
+
+				//loading
+				$("#showLoadingTost").on("tap", function() {
+					if($loadingToast.css('display') != 'none') return;
+					if($toast.css('display') != 'none') return;
+					fadeout($loadingToast);
+				});
+
+				function fadeout(e) {
+					e.fadeIn(100);
+					setTimeout(function() {
+						e.fadeOut(100);
+					}, 2000);
+				}
+			});
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,23 @@
+@import "colors.less";
+@import "size.less";
+@import "layout.less";
+@import "css3.less";
+@import "flex.less";
+
+.tabbar-center{
+    border-top: 1px solid @border_line;
+    background-color:@bar_bg;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+   li{
+       border-right:none;
+       border-bottom: none;
+       padding: @num2 0;
+       &.on{
+         p{
+            color:@icon_success;  
+         } 
+       }
+   }
+}

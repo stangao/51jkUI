@@ -1,0 +1,318 @@
+@charset "utf-8";
+/* 
+ * Description: skin.css
+ * Author:      gaonaibo,sundan
+ * Version:     1.0.0(update stan 2016-10-25 15:25)
+ * Website:     http://www.51jk.com/
+*/
+/* CSS Reset - Description :Reset skin for difference needs----------- */
+/**按钮*/
+/* 
+ * Description: layout.css
+ * Author:      sundan
+ * Version:     1.0.0(update stan 2016-10-25 15:25)
+ * Website:     http://www.51jk.com/
+*/
+/* CSS Reset - Description :用于demo展示，实际应用时不需要引用----------- */
+/*
+定义圆角
+@radius 圆角大小
+*/
+/*
+盒子阴影
+@right_left 右边阴影为正数 左边负数
+@bottom_top 下边阴影为正数 上边负数
+@box  阴影大小
+@box_color 阴影颜色
+*/
+/*背景渐变
+@start  渐变开始颜色
+@end  结束颜色
+*/
+/*
+透明度 或渐变 1为不透明 0透明
+css3 rgba(110, 142, 185, .4)!important;前三个是颜色值 后一个是透明值
+用来兼容所有浏览器
+*/
+/*
+ flex 用来实现弹性盒子布局
+ * */
+/*
+列布局
+@c1 列数
+@c2 列宽
+@c3 列间距
+@c4 边框样式
+*/
+.wrapper-but {
+  padding: 0 4%;
+}
+.button .but-common {
+  margin-top: 0.5rem;
+}
+.but-common {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  color: #ffffff;
+  outline: none;
+}
+.but-common.but-default:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  -o-transform: scale(0.5);
+  transform: scale(0.5);
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+.but-XL-size {
+  font-size: 0.5rem;
+  width: ;
+  height: 1.3rem;
+  line-height: 2.6;
+}
+.but-XL-size:active {
+  color: rgba(255, 255, 255, 0.6);
+}
+.but-L-size {
+  font-size: 0.45rem;
+  width: 2.4rem;
+  height: 0.65rem;
+  line-height: 1.44444444;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  -ms-tap-highlight-color: rgba(0, 0, 0, 0);
+  -o-tap-highlight-color: rgba(0, 0, 0, 0);
+  tap-highlight-color: rgba(0, 0, 0, 0);
+  display: inline-block;
+}
+.but-L-size:after {
+  border-width: 0;
+}
+.but-M-size {
+  font-size: 0.45rem;
+  width: 1.8rem;
+  height: 1.1rem;
+  line-height: 2.44444444;
+  display: inline-block;
+}
+.but-M-size:active {
+  color: rgba(255, 255, 255, 0.6);
+}
+.but-primary {
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ff9815), to(#ff8c3f));
+  background: gradient(linear, 0 0, 0 100%, from(#ff9815), to(#ff8c3f));
+  background: -webkit-linear-gradient(left, #ff9815, #ff8c3f);
+  background: linear-gradient(left, #ff9815, #ff8c3f);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff9815, endColorstr=#ff8c3f, grandientType=0);
+  box-shadow: 1px 1px 2px #ff8c40;
+  -moz-box-shadow: 1px 1px 2px #ff8c40;
+  -webkit-box-shadow: 1px 1px 2px #ff8c40;
+}
+.but-primary:not(.but-disabled ):active {
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ff8c40), to(#ff9815));
+  background: gradient(linear, 0 0, 0 100%, from(#ff8c40), to(#ff9815));
+  background: -webkit-linear-gradient(left, #ff8c40, #ff9815);
+  background: linear-gradient(left, #ff8c40, #ff9815);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff8c40, endColorstr=#ff9815, grandientType=0);
+}
+.but-primary.but-M-size {
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ff9815), to(#ff9815));
+  background: gradient(linear, 0 0, 0 100%, from(#ff9815), to(#ff9815));
+  background: -webkit-linear-gradient(left, #ff9815, #ff9815);
+  background: linear-gradient(left, #ff9815, #ff9815);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff9815, endColorstr=#ff9815, grandientType=0);
+  box-shadow: 0px 0px 0px #ff8c40;
+  -moz-box-shadow: 0px 0px 0px #ff8c40;
+  -webkit-box-shadow: 0px 0px 0px #ff8c40;
+}
+.but-primary.but-M-size:not(.but-disabled ):active {
+  background-color: #000000;
+}
+.but-default {
+  color: #000000;
+  background-color: #f8f8f8;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  -ms-tap-highlight-color: rgba(0, 0, 0, 0);
+  -o-tap-highlight-color: rgba(0, 0, 0, 0);
+  tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.but-default:not(.but-disabled):active {
+  color: rgba(0, 0, 0, 0.6);
+  background-color: #dedede;
+}
+.operation .but-default:active {
+  color: #000000;
+  background-color: #f8f8f8;
+}
+.but-warn {
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#fa6368), to(#f74a5e));
+  background: gradient(linear, 0 0, 0 100%, from(#fa6368), to(#f74a5e));
+  background: -webkit-linear-gradient(left, #fa6368, #f74a5e);
+  background: linear-gradient(left, #fa6368, #f74a5e);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#fa6368, endColorstr=#f74a5e, grandientType=0);
+  box-shadow: 1px 1px 2px #f8485d;
+  -moz-box-shadow: 1px 1px 2px #f8485d;
+  -webkit-box-shadow: 1px 1px 2px #f8485d;
+}
+.but-warn:not(.but-disabled ):active {
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#f8485d), to(#fa6368));
+  background: gradient(linear, 0 0, 0 100%, from(#f8485d), to(#fa6368));
+  background: -webkit-linear-gradient(left, #f8485d, #fa6368);
+  background: linear-gradient(left, #f8485d, #fa6368);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#f8485d, endColorstr=#fa6368, grandientType=0);
+}
+.but-warn.but-M-size {
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#fa6368), to(#fa6368));
+  background: gradient(linear, 0 0, 0 100%, from(#fa6368), to(#fa6368));
+  background: -webkit-linear-gradient(left, #fa6368, #fa6368);
+  background: linear-gradient(left, #fa6368, #fa6368);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#fa6368, endColorstr=#fa6368, grandientType=0);
+  box-shadow: 0px 0px 0px #f8485d;
+  -moz-box-shadow: 0px 0px 0px #f8485d;
+  -webkit-box-shadow: 0px 0px 0px #f8485d;
+}
+.but-warn.but-M-size:not(.but-disabled ):active {
+  background-color: #ff5e43;
+}
+.but-L-primary {
+  color: #ff9815;
+  border: 1px solid #ff9815;
+}
+.but-L-primary:active {
+  color: rgba(255, 143, 66, 0.6);
+  border-color: rgba(255, 143, 66, 0.6);
+}
+.but-disabled {
+  color: rgba(255, 255, 255, 0.6);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.but-disabled.but-primary {
+  background-color: #ff8f42;
+  color: rgba(255, 255, 255, 0.3);
+}
+.but-disabled.but-default {
+  background-color: #f7f7f7;
+  color: rgba(0, 0, 0, 0.3);
+}
+.but-disabled.but-warn {
+  background-color: #ff5e43;
+  color: rgba(0, 0, 0, 0.2);
+}
+.actionsheet .but-common {
+  margin-top: 0.5rem;
+}
+.page-mask {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.ios-actionsheet {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: transform 0.3s;
+  -moz-transition: transform 0.3s;
+  -ms-transition: transform 0.3s;
+  -o-transition: transform 0.3s;
+  transition: transform 0.3s;
+  z-index: 5000;
+  width: 100%;
+  background-color: #f8f8f8;
+  -webkit-transform: translate(0, 100%);
+  -moz-transform: translate(0, 100%);
+  -ms-transform: translate(0, 100%);
+  -o-transform: translate(0, 100%);
+  transform: translate(0, 100%);
+}
+.ios-actionsheet-menu {
+  background: #ffffff;
+}
+.ios-actionsheet-cell {
+  position: relative;
+  padding: 0.4rem 0;
+  font-size: 0.45rem;
+  border-bottom: 1px solid #d9d9d9;
+}
+.ios-actionsheet-cell:last-child {
+  border-bottom: 0;
+}
+.ios-actionsheet-cell:active {
+  background-color: #ececec;
+}
+.ios-actionsheet-action {
+  margin-top: 0.4rem;
+  background-color: #ffffff;
+}
+.android-actionsheet {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background: transparent;
+  -webkit-transition: transform 0.3s;
+  -moz-transition: transform 0.3s;
+  -ms-transition: transform 0.3s;
+  -o-transition: transform 0.3s;
+  transition: transform 0.3s;
+  z-index: 5000;
+  width: 246px;
+}
+.actionsheet-toggle {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+}

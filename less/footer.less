@@ -1,0 +1,31 @@
+@import "colors.less";
+@import "size.less";
+@import "layout.less";
+
+
+
+.footer-text{
+   font-size: @text_L_size; 
+   
+}
+.footer-link{
+   font-size: @text_L_size; 
+   color: @footer_link; 
+   border-left:1px solid @gray_c; 
+   padding-left:@num2;
+   display:  inline-block;
+   &:first-child{
+     border-left:none  
+   }
+ 
+}
+.footer-center p{
+    text-align: @center;
+}
+
+.footer-fixed{
+    position: fixed;
+    bottom: @num5;
+    left: 0;
+    right:0;
+}

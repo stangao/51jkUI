@@ -1,0 +1,39 @@
+@import "colors.less";
+@import "size.less";
+@import "layout.less";
+@import "css3.less";
+@import "button.less";
+@import "iconfont.less";
+@import "icon.less";
+@import "footer.less";
+
+
+.msg-center{
+    padding-top: @num10;
+}
+.msg-text-area{
+    margin-bottom: @num8;
+    margin-top: @num8;
+    padding: 0 @num6;
+    .msg-title{
+       font-size: @header_size;
+       margin-bottom: @num4;
+    }
+    .msg-desc{
+        font-size: @text_L_size;
+        color: @gray_night;
+        a{
+            color: @text_link;
+        }
+    }
+}
+.msg-extra-area{
+    position: fixed;
+    bottom: @num4;
+    width: 100%;
+}
+.msg,.msg-success,.msg-warn{
+    .but-common{
+        margin-top: @num5;
+    }
+}

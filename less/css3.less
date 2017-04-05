@@ -1,0 +1,80 @@
+/*
+定义圆角
+@radius 圆角大小
+*/
+.round(@radius:5px){
+    border-radius:@radius;
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+     -ms-border-radius: @radius;
+      -o-border-radius: @radius;
+}
+/*
+盒子阴影
+@right_left 右边阴影为正数 左边负数
+@bottom_top 下边阴影为正数 上边负数
+@box  阴影大小
+@box_color 阴影颜色
+*/
+.boxshadow(@right_left:5px,@bottom_top:5px,@box :5px,@box_color:#b6ebf7){
+    box-shadow:@arguments;
+   -moz-box-shadow:@arguments;
+   -webkit-box-shadow:@arguments;
+}
+/*背景渐变
+@start  渐变开始颜色
+@end  结束颜色
+*/
+.bg(@start :#00ffff,@end :#9fffff){
+    background:-webkit-gradient(linear,0 0, 0 100%,from(@start),to(@end));
+    background:gradient(linear,0 0, 0 100%,from(@start),to(@end)); 
+    background:-webkit-linear-gradient(left,@start,@end);
+     background:linear-gradient(left,@start,@end);     
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=@start ,endColorstr=@end ,grandientType=0);
+}
+
+
+/*
+透明度 或渐变 1为不透明 0透明
+css3 rgba(110, 142, 185, .4)!important;前三个是颜色值 后一个是透明值
+用来兼容所有浏览器
+*/
+
+.rgba(@rgba_a:.4,@rgb_b:40){
+    filter: alpha(opacity=@rgb_b); 
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=@{rgb_b})"; 
+    opacity:@rgb_a; 
+}
+
+/*
+ flex 用来实现弹性盒子布局
+ * */
+.pre(@style,@value){
+   -webkit-@{style}: @value;
+       -moz-@{style}:@value;
+        -ms-@{style}:@value;
+        -o-@{style}: @value;
+            @{style}:@value; 
+}
+
+/*
+列布局
+@c1 列数
+@c2 列宽
+@c3 列间距
+@c4 边框样式
+*/
+.column(@c1:3,@c2:310px,@c3:10px,@c4:1px solid #ccc){
+    column-count:@c1;
+    column-width:@c2;
+    column-gap:@c3;
+    column-rule:@c4;
+    -webkit-column-count:@c1;
+    -webkit-column-width:@c2;
+    -webkit-column-gap:@c3;
+    -webkit-column-rule:@c4;
+    -moz-column-count:@c1;
+    -moz-column-width:@c2;
+    -moz-column-gap:@c3;
+    -moz-column-rule:@c4;
+}

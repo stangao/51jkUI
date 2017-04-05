@@ -1,0 +1,52 @@
+@import "colors.less";
+@import "layout.less";
+@import "css3.less";
+@import "size.less";
+
+.loadmore{
+    margin-top: @num8;
+}
+.loading-animate{
+    font-size: @num8;
+    color:@gray_c;
+    .pre(animation,loading 1s steps(12,end) infinite );
+    display: inline-block;
+}
+
+@keyframes loading{
+    10%{
+        .pre(transform,rotate3d(0,0,1,0deg));
+        
+    }
+    100%{
+        .pre(transform,rotate3d(0,0,1,360deg));
+    }
+}
+@-webkit-keyframes loading{
+    10%{
+        .pre(transform,rotate3d(0,0,1,0deg));
+    }
+    100%{
+        .pre(transform,rotate3d(0,0,1,360deg));
+    }
+}
+.loadmore-line{
+    border-top: 1px solid @gray_c;
+    color:@gray_c;
+    line-height: 1.6rem;
+}
+.loadmore-line .loading-tips{
+    padding:0 @num2;
+    background: @bg_color;
+    position:relative;
+    top:-@num8;
+}
+
+
+.loadmore-sl .loading-tips i{
+    width: @num2;
+    height: @num2;
+    .pre(border-radius,100%);
+    display: inline-block;
+    background-color:@gray_c ;
+}

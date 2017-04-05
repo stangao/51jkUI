@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" id="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="telephone=no" name="format-detection">
+		<title>navbar</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/navbar.css" />
+		<script type="text/javascript" src="js/layout.js"></script>
+	</head>
+
+	<body class="bg_color">
+		<div class="contiainer">
+			<div class="page navbar">
+				<div class="page-hd">
+					<h2>Navbar</h2>
+					<p>tab导航</p>
+				</div>
+				<div class="page-bd ">
+					<div class="page-tab">
+						<div class="navbar-center flex-cont flex-tab">
+							<li class="tab-item on">选项一</li>
+							<li class="tab-item ">选项二</li>
+							<li class="tab-item ">选项三</li>
+						</div>
+					</div>
+				</div>
+				<div class="page-ft">
+					<a href="javascript:home()">
+						<img src="images/icon_footer_link.png" />
+					</a>
+				</div>
+
+			</div>
+		</div>
+		<script src="js/zepto.min.js"></script>
+		<script src="js/base.js"></script>
+		<script>
+			$(function() {
+				$('.tab-item').tabchange();
+			})
+		</script>
+	</body>
+
+</html>

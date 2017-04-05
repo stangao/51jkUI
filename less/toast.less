@@ -1,0 +1,37 @@
+@import "colors.less";
+@import "size.less";
+@import "layout.less";
+@import "css3.less";
+@import "button.less";
+@import "iconfont.less";
+@import "icon.less";
+@import "loadmore.less";
+
+.show-toast{
+    position: fixed;
+    z-index: 500;
+    width: 120px;
+    min-height: 120px;
+    top: 50%;
+    left:50%;
+    background: rgba(40,40,40,0.75);
+    .round(5px);
+    color:@white;
+    .pre(transform,translate(-50%,-50%));
+    .icon-chenggonggou,.icon-loading{
+        color:@white;
+        font-size: @num15;
+        margin-top: @num5;
+        margin-bottom: @num2;
+        display: block;
+    }
+    .show-toast-content{
+        font-size: @num5;
+        text-align: @center;
+    }
+}
+.toast{
+    .but-common{
+        margin-top: @num5;
+    }
+}

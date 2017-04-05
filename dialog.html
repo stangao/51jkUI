@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" id="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="telephone=no" name="format-detection">
+		<title>对话框</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/dialog.css" />
+		<script type="text/javascript" src="js/layout.js"></script>
+	</head>
+
+	<body>
+		<div class="contiainer">
+			<div class="page dialog">
+				<div class="page-hd">
+					<h2>Dialog</h2>
+					<p>对话框</p>
+				</div>
+				<div class="page-bd page-bd-spacing operation">
+					<a href="javascript:;" class="but-common but-default but-XL-size " id="showIOSDialog1">ios Dialog样式一</a>
+					<a href="javascript:;" class="but-common but-default but-XL-size " id="showIOSDialog2">ios Dialog样式二</a>
+
+					<a href="javascript:;" class="but-common but-default but-XL-size " id="showAndroidDialog1">Android Dialog样式一</a>
+					<a href="javascript:;" class="but-common but-default but-XL-size " id="showAndroidDialog2">Android Dialog样式二</a>
+				</div>
+				<div class="page-ft">
+					<a href="javascript:home()">
+						<img src="images/icon_footer_link.png" />
+					</a>
+				</div>
+
+			</div>
+		</div>
+		<script src="js/zepto.min.js"></script>
+		<script src="js/base.js"></script>
+		<script>
+			/****需要点击按钮才能弹出弹窗******/
+			$('#showIOSDialog1').comPopBox({
+				winId: 'showIOSDialog1',
+				popTitle: '弹窗标题',
+				popContent: '弹窗内容，告知当前状态、信息和解决方法，描述文字尽量控制在三行内',
+				operateBut1: '辅助操作',
+				operateBut2: '主操作',
+				isDefault: true,
+				callback: add,
+			});
+
+			$('#showIOSDialog2').comPopBox({
+				winId: 'showIOSDialog2',
+				popTitle: ' ',
+				popContent: '弹窗内容，告知当前状态、信息和解决方法，描述文字尽量控制在三行内',
+				operateBut1: ' ',
+				operateBut2: '知道了',
+				isDefault: true,
+				callback: add,
+			});
+
+			$('#showAndroidDialog1').comPopBox({
+				winId: 'showAndroidDialog1',
+				popTitle: '弹窗标题',
+				popContent: '弹窗内容，告知当前状态、信息和解决方法，描述文字尽量控制在三行内',
+				operateBut1: '辅助操作 ',
+				operateBut2: '主操作',
+				isDefault: true,
+				callback: add,
+			});
+			$('#showAndroidDialog2').comPopBox({
+				winId: 'showAndroidDialog2',
+				popTitle: ' ',
+				popContent: '弹窗内容，告知当前状态、信息和解决方法，描述文字尽量控制在三行内',
+				operateBut1: '辅助操作 ',
+				operateBut2: '主操作',
+				isDefault: true,
+				callback: add,
+			});
+
+			function add() {
+				alert("点击确认按钮就可以看到我哦！");
+			}
+		</script>
+	</body>
+
+</html>

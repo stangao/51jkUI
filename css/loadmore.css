@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* 
+ * Description: skin.css
+ * Author:      gaonaibo,sundan
+ * Version:     1.0.0(update stan 2016-10-25 15:25)
+ * Website:     http://www.51jk.com/
+*/
+/* CSS Reset - Description :Reset skin for difference needs----------- */
+/**按钮*/
+/* 
+ * Description: layout.css
+ * Author:      sundan
+ * Version:     1.0.0(update stan 2016-10-25 15:25)
+ * Website:     http://www.51jk.com/
+*/
+/* CSS Reset - Description :用于demo展示，实际应用时不需要引用----------- */
+/*
+定义圆角
+@radius 圆角大小
+*/
+/*
+盒子阴影
+@right_left 右边阴影为正数 左边负数
+@bottom_top 下边阴影为正数 上边负数
+@box  阴影大小
+@box_color 阴影颜色
+*/
+/*背景渐变
+@start  渐变开始颜色
+@end  结束颜色
+*/
+/*
+透明度 或渐变 1为不透明 0透明
+css3 rgba(110, 142, 185, .4)!important;前三个是颜色值 后一个是透明值
+用来兼容所有浏览器
+*/
+/*
+ flex 用来实现弹性盒子布局
+ * */
+/*
+列布局
+@c1 列数
+@c2 列宽
+@c3 列间距
+@c4 边框样式
+*/
+.loadmore {
+  margin-top: 0.8rem;
+}
+.loading-animate {
+  font-size: 0.8rem;
+  color: #cccccc;
+  -webkit-animation: loading 1s steps(12, end) infinite;
+  -moz-animation: loading 1s steps(12, end) infinite;
+  -ms-animation: loading 1s steps(12, end) infinite;
+  -o-animation: loading 1s steps(12, end) infinite;
+  animation: loading 1s steps(12, end) infinite;
+  display: inline-block;
+}
+@keyframes loading {
+  10% {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    -moz-transform: rotate3d(0, 0, 1, 0deg);
+    -ms-transform: rotate3d(0, 0, 1, 0deg);
+    -o-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+  100% {
+    -webkit-transform: rotate3d(0, 0, 1, 360deg);
+    -moz-transform: rotate3d(0, 0, 1, 360deg);
+    -ms-transform: rotate3d(0, 0, 1, 360deg);
+    -o-transform: rotate3d(0, 0, 1, 360deg);
+    transform: rotate3d(0, 0, 1, 360deg);
+  }
+}
+@-webkit-keyframes loading {
+  10% {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    -moz-transform: rotate3d(0, 0, 1, 0deg);
+    -ms-transform: rotate3d(0, 0, 1, 0deg);
+    -o-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+  100% {
+    -webkit-transform: rotate3d(0, 0, 1, 360deg);
+    -moz-transform: rotate3d(0, 0, 1, 360deg);
+    -ms-transform: rotate3d(0, 0, 1, 360deg);
+    -o-transform: rotate3d(0, 0, 1, 360deg);
+    transform: rotate3d(0, 0, 1, 360deg);
+  }
+}
+.loadmore-line {
+  border-top: 1px solid #cccccc;
+  color: #cccccc;
+  line-height: 1.6rem;
+}
+.loadmore-line .loading-tips {
+  padding: 0 0.2rem;
+  background: #f8f8f8;
+  position: relative;
+  top: -0.8rem;
+}
+.loadmore-sl .loading-tips i {
+  width: 0.2rem;
+  height: 0.2rem;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  display: inline-block;
+  background-color: #cccccc;
+}
